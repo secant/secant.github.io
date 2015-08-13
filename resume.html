@@ -2,8 +2,23 @@
 	<title>Résumé</title>
 	<link href="http://www.vivian.tk/base.html" rel="import">
 </head>
+<nav class="navbar navbar-default">
+	<div class="container">
+		<div class="navbar-header">
+	      <a class="navbar-brand" href="http://www.vivian.tk">
+	        <img alt="Logo" src="http://www.vivian.tk/favicon/favicon-32x32.png">
+	      </a>
+    	</div>
+    	<div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav">
+				<li><a href="http://www.vivian.tk/about">About</a></li>
+				<li class="active"><a href="http://www.vivian.tk/resume">Résumé</a></li>
+				<li><a href="http://www.vivian.tk/events">Events Attending</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
 <body>
-	<div id="nav-container"></div>
 	<div class="container" align="center">
 		<object style="border: solid" data="http://www.vivian.tk/img/VivianFangResume.pdf" type="application/pdf" width="80%" height="80%">
 		<p>It appears you don't have a PDF plugin for this browser. Try downloading the file instead.</p>
@@ -19,7 +34,6 @@
 </div>
 <script>
 	$(document).ready(function() {
-	$('#nav-container').load('http://www.vivian.tk/navbar.html');
 	$('#footer-container').load('http://www.vivian.tk/footer.html');
 	});
 </script>
