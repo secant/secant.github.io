@@ -48,9 +48,13 @@
 <body>
 	<div class="container">
 		<div align="center"><br>
-			<a target="_blank" href="http://www.vivian.tk/img/VivianFangResume.pdf"><button type="button" class="btn btn-default btn-lg">
-	  		<i class="fa fa-download"></i> Download Résumé (PDF)
-			</button></a>
+			<a target="_blank" href="http://www.vivian.tk/img/VivianFangResume.pdf"><button type="button" class="btn btn-primary">
+			<i class="fa fa-download"></i> Download Résumé
+			</button></a> 
+			<a href="#resumepdf" id="viewpdf" class="toggle btn btn-primary">Show Inline PDF</a><br><br>
+				<div id="resumepdf" class="well hidden" style="width:80%; height:70%;">
+					<iframe src="http://docs.google.com/gview?url=http://www.vivian.tk/img/VivianFangResume.pdf&embedded=true" style="width:100%; height:100%;" frameborder="0"></iframe>
+				</div>
 		</div>
 	</div>
 </body>
@@ -59,5 +63,16 @@
 <script>
 	$(document).ready(function() {
 	$('#footer-container').load('http://www.vivian.tk/footer.html');
+	});
+	$(function () {
+    $('#viewpdf').click(function (event) {
+        event.preventDefault();
+        var target = $(this).attr('href');
+        $(target).toggleClass('hidden show');
+        if ($('#viewpdf').text().valueOf() == 'Hide Inline PDF')
+        	$('#viewpdf').text('Show Inline PDF');
+        else
+            $('#viewpdf').text('Hide Inline PDF');
+    	});
 	});
 </script>
