@@ -22,6 +22,12 @@
 	<meta name="theme-color" content="#ffffff">
 	<!--Stylesheets/Scripts-->
 	<link href="http://www.vivian.tk/base.html" rel="import">
+	<script>
+		$(document).ready(function() {
+			$('#footer-container').load('http://www.vivian.tk/footer.html');
+			$("body").tooltip({ selector: '[data-toggle=tooltip]' });
+		});
+	</script>
 </head>
 <nav class="navbar navbar-default">
 	<div class="container">
@@ -49,7 +55,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-1 col-md-1">&nbsp;</div>
-			<div class="col-xs-4 col-md-2" align="center">
+			<div class="col-xs-3 col-md-2" align="center">
 				<a href="#" data-toggle="tooltip" data-placement="top" title="Picture of me"><img src="http://www.vivian.tk/img/me.jpg" style="border-style: solid; border-width: 2px; max-width: 100%;"></a><br><br>
 				<a href="#" data-toggle="tooltip" data-placement="top" title="FIRST Robotics"><img src="http://www.vivian.tk/img/about_4.jpg" style="border-style: solid; border-width: 2px; max-width: 100%;"></a><br><br>
 				<a href="#" data-toggle="tooltip" data-placement="top" title="Berkeley Campanile"><img src="http://www.vivian.tk/img/about_5.jpg" style="border-style: solid; border-width: 2px; max-width: 100%;"></a>
@@ -74,10 +80,10 @@
 					<li>Science Olympiad</li>
 				</ul>
 			</div>
-			<div class="col-xs-2 col-med-2">
-				<img src="http://www.vivian.tk/img/about_1.jpg" altid="Origami I folded" style="border-style: solid; border-width: 2px; max-width: 100%;"><br><br>
-				<img src="http://www.vivian.tk/img/about_2.jpg" altid="Ice cream!" style="border-style: solid; border-width: 2px; max-width: 100%;"><br><br>
-				<img src="http://www.vivian.tk/img/about_3.jpg" altid="Croquettes" style="border-style: solid; border-width: 2px; max-width: 100%;">
+			<div class="col-xs-3 col-md-2">
+				<a href="#" data-toggle="tooltip" data-placement="top" title="Origami I folded"><img src="http://www.vivian.tk/img/about_1.jpg" style="border-style: solid; border-width: 2px; max-width: 100%;"></a><br><br>
+				<a href="#" data-toggle="tooltip" data-placement="top" title="Ice cream!"><img src="http://www.vivian.tk/img/about_2.jpg" style="border-style: solid; border-width: 2px; max-width: 100%;"></a><br><br>
+				<a href="#" data-toggle="tooltip" data-placement="top" title="Croquettes"><img src="http://www.vivian.tk/img/about_3.jpg" style="border-style: solid; border-width: 2px; max-width: 100%;"></a>
 			</div>
 			<div class="col-xs-1 col-md-1">&nbsp;</div>
 		</div>
@@ -85,10 +91,6 @@
 </body>
 <div id="footer-container">
 </div>
-<script>
-	$(document).ready(function() {
-	$('#footer-container').load('http://www.vivian.tk/footer.html');
-	});
-</script>
+
 
 
