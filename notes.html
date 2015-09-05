@@ -1,5 +1,5 @@
 <head>
-	<title>Home</title>
+	<title>Class Notes</title>
 	<!--Favicons-->
 	<link rel="apple-touch-icon" sizes="57x57" href="http://www.vivian.tk/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="http://www.vivian.tk/apple-touch-icon-60x60.png">
@@ -32,7 +32,7 @@
               	<span class="icon-bar"></span>
           	 	<span class="icon-bar"></span>
           	</button>
-	      	<a class="navbar-brand" href="http://www.vivian.tk">
+	      	<a class="navbar-brand" class="pull-left" href="http://www.vivian.tk">
 	        	<img alt="Logo" src="http://www.vivian.tk/favicon-32x32.png">
 	      	</a>
     	</div>
@@ -41,23 +41,39 @@
 				<li><a href="http://www.vivian.tk/about">About</a></li>
 				<li><a href="http://www.vivian.tk/resume">Résumé</a></li>
 				<li><a href="http://www.vivian.tk/events">Events Attending</a></li>
-				<li><a href="http://www.vivian.tk/notes">Class Notes</a></li>
+				<li class="active"><a href="http://www.vivian.tk/notes">Class Notes</a></li>
 			</ul>
 		</div>
 	</div>
 </nav>
 <body>
-	<div id="nav-container"></div>
-    <div class="container">
-    	<div class="jumbotron">
-    		<h2>Vivian Fang. 17. EECS Freshman @ <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>.</h2>
-    	</div>
-    </div>
+	<div class="container">
+		<div class="alert alert-info alert-dismissible" role="alert">
+  		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  		<strong>Disclaimer:</strong> These are my personal notes, and I do not claim that they will increase your grade in any way. I hope you find them useful!
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+	    		<h3 class="panel-title">Physics 7B</h3>
+	  		</div>
+	  	<div class="panel-body">
+	    	<b>Week 1</b>
+	    	<ul>
+	    		<li><a href = "http://www.vivian.tk/img/physics7b/08-27-15.pdf">08/27 - Chapter 17</a></li>
+	    	</ul>
+	    	<b>Week 2</b>
+	    	<ul>
+	    		<li><a href = "http://www.vivian.tk/img/physics7b/09-01-15.pdf">09/01 - Chapter 18</a></li>
+	    		<li><a href = "http://www.vivian.tk/img/physics7b/09-03-15.pdf">09/03 - Chapter 19</a></li>
+	    	</ul>
+	  	</div>
+	</div>
+</div>
 </body>
 <div id="footer-container">
 </div>
 <script>
 	$(document).ready(function() {
-		$('#footer-container').load('http://www.vivian.tk/footer.html');
+	$('#footer-container').load('http://www.vivian.tk/footer.html');
 	});
 </script>
