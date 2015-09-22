@@ -72,6 +72,24 @@
 		    		<h3 class="panel-title">Physics 7B - Lanzara, Sec. 3</h3>
 		  		</div>
 			  	<div class="panel-body">
+			  		<a href="#p7b" id="physics7b" class="toggle btn btn-primary">Show Chapter Titles</a><br><br>
+				  		<div id="p7b" class="well hidden" style="width:100%; height:200px; overflow-y:scroll">
+									<p align="right"><em><i class="fa fa-star"></i> denotes this week's chapter(s)</em></p>
+									<li>17. Temperature, Thermal Expansion, and the Ideal Gas Law</li>
+									<li>18. Kinetic Theory of Gases</li>
+									<li>19. Heat and the First Law of Thermodynamics</li>
+									<li>20. Second Law of Thermodynamics</li>
+									<li>21. Electric Charge and Electric Field <i class="fa fa-star"></i> </li>
+									<li>22. Gauss's Law <i class="fa fa-star"></i> </li>
+									<li>23. Electric Potential</li>
+									<li>24. Capacitance, Dielectrics, Electrical Energy Storage</li>
+									<li>25. Electric Currents and Resistance</li>
+									<li>26. DC Circuits</li>
+									<li>27. Magnetism</li>
+									<li>28. Sources of Magnetic Field</li>
+									<li>29. Electromagnetic Induction and Faraday's Law</li>
+									<li>30. Inductance, Electromagnetic Oscillations, and AC Circuits</li>
+							</div>
 			    	<b>Week 1</b>
 			    	<ul>
 			    		<li><a href="http://www.vivian.tk/img/physics7b/08-27-15.pdf" target="blank">08/27 - Chapter 17</a></li>
@@ -100,6 +118,72 @@
 		    		<h3 class="panel-title">Math 53 - Gomez, Sec. 1</h3>
 		  		</div>
 			  	<div class="panel-body">
+			  		<a href="#m53" id="math53" class="toggle btn btn-primary">Show Chapter Titles</a><br><br>
+							<div id="m53" class="well hidden" style="width:100%; height:200px; overflow-y:scroll">
+								<p align="right"><em><i class="fa fa-star"></i> denotes this week's sections</em></p>
+								<strong>Chapter 10. Parametric Equations and Polar Coordinates</strong>
+								<ul>
+									<li>10.1 Curves Defined By Parametric Equations</li>
+									<li>10.2 Calculus with Parametric Curves</li>
+									<li>10.3 Polar Coordinates</li>
+									<li>10.4 Areas and Lengths in Polar Coordinates</li>
+									<li>10.5 Conic Sections</li>
+									<li>10.6 Conic Sections in Polar Coordinates (omitted)</li>
+								</ul>
+								<strong>Chapter 12. Vectors and the Geometry of Space</strong>
+								<ul>
+									<li>12.1 Three-Dimensional Coordinate Systems</li>
+									<li>12.2 Vectors</li>
+									<li>12.3 The Dot Product</li>
+									<li>12.4 The Cross Product</li>
+									<li>12.5 Equations Of Lines And Planes</li>
+									<li>12.6 Cylinders and Quadratic Surfaces</li>
+								</ul>
+								<strong>Chapter 13. Vector Functions</strong>
+								<ul>
+									<li>13.1 Vector Functions and Space Curves</li>
+									<li>13.2 Derivatives and Integrals Of Vector Functions</li>
+									<li>13.3 Arc Length and Curvature (omitted)</li>
+									<li>13.4 Motion In Space: Velocity and Acceleration (omitted)</li>
+								</ul>
+								<strong>Chapter 14. Partial Derivatives</strong>
+								<ul>
+									<li>14.1 Functions of Several Variables <i class="fa fa-star"></i></li>
+									<li>14.2 Limits and Continuity <i class="fa fa-star"></i></li>
+									<li>14.3 Partial Derivatives</li>
+									<li>14.4 Tangent Planes and Linear Approximations</li>
+									<li>14.5 The Chain Rule</li>
+									<li>14.6 Directional Derivatives and The Gradient Vector</li>
+									<li>14.7 Maximum and Minimum Values</li>
+									<li>14.8 Lagrange Multipliers</li>
+								</ul>
+								<strong>Chapter 15. Multiple Integrals</strong>
+								<ul>
+									<li>15.1 Double Integrals Over Rectangles</li>
+									<li>15.2 Iterated Integrals</li>
+									<li>15.3 Double Integrals Over General Regions</li>
+									<li>15.4 Double Integrals in Polar Coordinates</li>
+									<li>15.5 Applications of Double Integrals</li>
+									<li>15.6 Surface Area</li>
+									<li>15.7 Triple Integrals</li>
+									<li>15.8 Triple Integrals in Cylindrical Coordinates</li>
+									<li>15.9 Triple Integrals in Spherical Coordinates</li>
+									<li>15.10 Change of Variables in Multiple Integrals</li>
+								</ul>
+								<strong>Chapter 16. Vector Calculus</strong>
+								<ul>
+									<li>16.1 Vector Fields</li>
+									<li>16.2 Line Integrals</li>
+									<li>16.3 The Fundamental Theorem for Line Integrals</li>
+									<li>16.4 Green’s Theorem</li>
+									<li>16.5 Curl and Divergence</li>
+									<li>16.6 Parametric Surfaces and Their Areas</li>
+									<li>16.7 Surface Integrals</li>
+									<li>16.8 Stoke’s Theorem</li>
+									<li>16.9 The Divergence Theorem</li>
+									<li>16.10 Summary</li>
+								</ul>
+							</div>
 			    	<b>Week 1</b>
 			    	<ul>
 			    		<li><a href="http://www.vivian.tk/img/math53/08-26-15.pdf" target="blank">08/26 - Section 10.1</a></li>
@@ -133,5 +217,25 @@
 <script>
 	$(document).ready(function() {
 	$('#footer-container').load('http://www.vivian.tk/footer.html');
+	});
+	$(function () {
+    $('#math53').click(function (event) {
+        event.preventDefault();
+        var target = $(this).attr('href');
+        $(target).toggleClass('hidden show');
+        if ($('#math53').text().valueOf() == 'Hide Chapter Titles')
+        	$('#math53').text('Show Chapter Titles');
+        else
+            $('#math53').text('Hide Chapter Titles');
+    	});
+     $('#physics7b').click(function (event) {
+        event.preventDefault();
+        var target = $(this).attr('href');
+        $(target).toggleClass('hidden show');
+        if ($('#physics7b').text().valueOf() == 'Hide Chapter Titles')
+        	$('#physics7b').text('Show Chapter Titles');
+        else
+            $('#physics7b').text('Hide Chapter Titles');
+    	});
 	});
 </script>
