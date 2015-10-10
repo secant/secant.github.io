@@ -1,0 +1,47 @@
+<head>
+<link href='https://fonts.googleapis.com/css?family=Changa+One' rel='stylesheet' type='text/css'>
+</head>
+<style>
+h1 {
+  font-family: 'Changa One', cursive;
+  font-weight: 400;
+  font-size: 72px;
+}
+body {
+    background-image: url("http://www.vivian.tk/img/drake/rainbow.gif");
+    background-repeat: repeat;
+}
+.image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
+.image:hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin_back 2s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@keyframes spin_back { 100% { -webkit-transform: rotate(360deg); transform:rotate(-360deg); } }
+</style>
+<body>
+  <div align="center">
+    <h1>CAL HACKS 2.000000</h1>
+    <img class="image" src="http://www.vivian.tk/img/drake/drake.png" alt=""></div>
+</body>
