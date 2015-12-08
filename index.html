@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Home</title>
 	<!--Favicons-->
@@ -22,6 +24,18 @@
 	<meta name="theme-color" content="#ffffff">
 	<!--Stylesheets/Scripts-->
 	<link href="http://www.vivian.tk/base.html" rel="import">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap/css/custom.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	  <!--[if lt IE 9]>
+	    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+  <!--Scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <nav class="navbar navbar-default">
 	<div class="container">
@@ -38,10 +52,9 @@
     	</div>
     	<div class="collapse navbar-collapse" id="navbar">
 			<ul class="nav navbar-nav">
-				<li><a href="http://www.vivian.tk/about">About</a></li>
-				<li><a href="http://www.vivian.tk/resume">Résumé</a></li>
-				<li><a href="http://www.vivian.tk/events">Events Attending</a></li>
-				<li><a href="http://www.vivian.tk/notes">Class Notes</a></li>
+				<li><a href="about">About</a></li>
+				<li><a href="resume">R&eacute;sum&eacute;</a></li>
+				<li><a href="notes">Class Notes</a></li>
 			</ul>
 		</div>
 	</div>
@@ -54,12 +67,23 @@
     	</div>
     </div>
 </body>
+<div class="se-pre-con">
+  <br><br><div class="signal"></div>
+</div>
 <div id="footer-container">
 </div>
 <script>
+	// Footer
 	$(document).ready(function() {
 		$('#footer-container').load('http://www.vivian.tk/footer.html');
 	});
+
+	// Loader
+	// Wait for window load
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow").delay(500);
+  });
 </script>
 
 <!-- Tracking -->
