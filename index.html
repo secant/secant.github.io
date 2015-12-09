@@ -23,7 +23,6 @@
 	<meta name="msapplication-config" content="http://www.vivian.tk/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<!--Stylesheets/Scripts-->
-	<link href="http://www.vivian.tk/base.html" rel="import">
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="bootstrap/css/custom.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -53,7 +52,7 @@
     	<div class="collapse navbar-collapse" id="navbar">
 			<ul class="nav navbar-nav">
 				<li><a href="about">About</a></li>
-				<li><a href="resume">R&eacute;sum&eacute;</a></li>
+				<li><a href="projects">Projects</a></li>
 				<li><a href="notes">Class Notes</a></li>
 			</ul>
 		</div>
@@ -65,7 +64,31 @@
     	<div class="jumbotron">
     		<h2>Vivian Fang. 17. EECS Freshman @ <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>.</h2>
     	</div>
-    	<button class="btn btn-primary btn-outline btn-lg">Projects</button>
+    	<div class="row" align="center">
+	    	<a href="projects" class="btn btn-primary btn-outline btn-lg"><i class="fa fa-folder-open"></i> Projects</button></a>
+	    	
+	    	<button class="btn btn-primary btn-outline btn-lg" data-toggle="collapse" data-target="#resume" aria-expanded="false" aria-controls="resume"><i class="fa fa-file"></i> Resume</button>
+	    	
+	    	<a href="https://github.com/secant" target="blank" class="btn btn-primary btn-outline btn-lg"><i class="fa fa-github-alt"></i> GitHub</a>
+	    	
+	    	<a href="https://www.linkedin.com/in/fangvivian" target="blank" class="btn btn-primary btn-outline btn-lg"><i class="fa fa-linkedin"></i> LinkedIn</a>
+	    	
+	    	<button type="button" id="email" class="btn btn-primary btn-outline btn-lg" data-toggle="popover" data-content=""><i class="fa fa-envelope"></i> Email</button>
+	    </div>
+	    <br>
+	    <div class="row" align="center">
+	    	<div class="collapse" id="resume">
+					 <div class="row">
+					 	<div class="col-lg-1"></div>
+					 	<div class="col-lg-9">
+							<iframe src="http://docs.google.com/gview?url=http://www.vivian.tk/img/VivianFangResume.pdf&embedded=true" style="width:100%; height:600px;" frameborder="0"></iframe>
+						</div>
+						<div class="col-lg-2" align="left">
+							<a target="_blank" href="http://www.vivian.tk/img/VivianFangResume.pdf"><button type="button" class="btn btn-primary btn-outline"><i class="fa fa-download"></i> Download</button></a>
+						</div>
+					</div>
+				</div>
+	    </div>
     </div>
 </body>
 <div class="se-pre-con">
@@ -73,30 +96,32 @@
 </div>
 <div id="footer-container">
 </div>
-<script>
-	// Footer
-	$(document).ready(function() {
-		$('#footer-container').load('http://www.vivian.tk/footer.html');
-	});
-
+<script type="text/javascript">
 	// Loader
 	// Wait for window load
   $(window).load(function() {
     // Animate loader off screen
     $(".se-pre-con").delay(300).fadeOut(800);
+    $('[data-toggle="popover"]').popover()
   });
+  
+  // Email (Spam Prevention)
+  var username = "v.fang";
+	var hostname = "berkeley.edu";
+	var linktext = username + "@" + hostname;
+	document.getElementById('email').setAttribute("data-content", linktext);
 </script>
 
 <!-- Tracking -->
 <script type="text/javascript">
-var sc_project=10731622; 
-var sc_invisible=1; 
-var sc_security="3c6f4820"; 
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
+	var sc_project=10731622; 
+	var sc_invisible=1; 
+	var sc_security="3c6f4820"; 
+	var scJsHost = (("https:" == document.location.protocol) ?
+	"https://secure." : "http://www.");
+	document.write("<sc"+"ript type='text/javascript' src='" +
+	scJsHost+
+	"statcounter.com/counter/counter.js'></"+"script>");
 </script>
 <noscript><div class="statcounter"><a title="web stats"
 href="http://statcounter.com/free-web-stats/"

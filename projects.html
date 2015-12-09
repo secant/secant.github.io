@@ -23,7 +23,6 @@
   <meta name="msapplication-config" content="http://www.vivian.tk/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
   <!--Stylesheets/Scripts-->
-  <link href="http://www.vivian.tk/base.html" rel="import">
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="bootstrap/css/custom.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -53,24 +52,54 @@
       <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav">
         <li><a href="about">About</a></li>
-        <li><a href="resume">R&eacute;sum&eacute;</a></li>
+        <li><a href="projects">Projects</a></li>
         <li><a href="notes">Class Notes</a></li>
       </ul>
     </div>
   </div>
 </nav>
 <body>
-	<div class="container">
-		<div align="center"><br>
-			<a target="_blank" href="http://www.vivian.tk/img/VivianFangResume.pdf"><button type="button" class="btn btn-primary">
-			<i class="fa fa-download"></i> Download R&eacute;sum&eacute;
-			</button></a> 
-			<a href="#resumepdf" id="viewpdf" class="toggle btn btn-primary">Show Inline PDF</a><br><br>
-				<div id="resumepdf" class="well hidden" style="width:80%; height:70%;">
-					<iframe src="http://docs.google.com/gview?url=http://www.vivian.tk/img/VivianFangResume.pdf&embedded=true" style="width:100%; height:700px;" frameborder="0"></iframe>
-				</div>
-		</div>
-	</div>
+<div class="container">
+  <div class="row">
+    <h3>Projects (under construction!)</h3>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="cuadro_intro_hover">
+      <p style="text-align:center; margin-top:20px;">
+        <img src="img/projects/hpcportal/dashboard.png" class="img-responsive" alt="">
+      </p>
+      <div class="caption">
+        <div class="blur"></div>
+        <div class="caption-text">
+          <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">HPC Portal</h3>
+          <p style="text-align: center;"><i>Web user interface for scientists using the University of Hawai`i supercomputer.</i></p>
+          <p><strong>Tools Used:</strong> Django, Python, HTML/CSS, JavaScript, Foundations</p>
+          <br><a class=" btn btn-info btn-lg" href="#">More &nbsp;<i class="fa fa-plus"></i></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="cuadro_intro_hover">
+      <p style="text-align:center; margin-top:20px;">
+        <img src="img/projects/plsfindme/thumbnail.png" class="img-responsive" alt="">
+      </p>
+      <div class="caption">
+        <div class="blur"></div>
+        <div class="caption-text">
+          <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">plsfind.me</h3>
+          <p style="text-align: center;"><i>Application to find peers in the same class.</i></p>
+          <p><strong>Tools Used:</strong> Django, Python, HTML/CSS, Bootstrap, Heroku</p>
+          <br><a class=" btn btn-info btn-lg" href="#">More &nbsp;<i class="fa fa-plus"></i></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+    </div>
+  </div>
+</div>
 </body>
 <div class="se-pre-con">
   <div class="signal"></div>
@@ -78,9 +107,9 @@
 <div id="footer-container">
 </div>
 <script>
-	$(document).ready(function() {
-	$('#footer-container').load('http://www.vivian.tk/footer.html');
-	});
+  $(document).ready(function() {
+  $('#footer-container').load('http://www.vivian.tk/footer.html');
+  });
 
   // Loader
   $(window).load(function() {
@@ -88,15 +117,15 @@
     $(".se-pre-con").delay(300).fadeOut(800);
   });
 
-	$(function () {
+  $(function () {
     $('#viewpdf').click(function (event) {
         event.preventDefault();
         var target = $(this).attr('href');
         $(target).toggleClass('hidden show');
         if ($('#viewpdf').text().valueOf() == 'Hide Inline PDF')
-        	$('#viewpdf').text('Show Inline PDF');
+          $('#viewpdf').text('Show Inline PDF');
         else
             $('#viewpdf').text('Hide Inline PDF');
-    	});
-	});
+      });
+  });
 </script>
