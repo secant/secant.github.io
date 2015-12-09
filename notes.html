@@ -1,342 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Class Notes</title>
-	<!--Favicons-->
-	<link rel="apple-touch-icon" sizes="57x57" href="http://www.vivian.tk/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="http://www.vivian.tk/apple-touch-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="http://www.vivian.tk/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="http://www.vivian.tk/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="http://www.vivian.tk/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="http://www.vivian.tk/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="http://www.vivian.tk/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="http://www.vivian.tk/apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="http://www.vivian.tk/apple-touch-icon-180x180.png">
-	<link rel="icon" type="image/png" href="http://www.vivian.tk/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="http://www.vivian.tk/android-chrome-192x192.png" sizes="192x192">
-	<link rel="icon" type="image/png" href="http://www.vivian.tk/favicon-96x96.png" sizes="96x96">
-	<link rel="icon" type="image/png" href="http://www.vivian.tk/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="http://www.vivian.tk/manifest.json">
-	<link rel="shortcut icon" href="http://www.vivian.tk/favicon.ico">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="msapplication-TileImage" content="http://www.vivian.tk/mstile-144x144.png">
-	<meta name="msapplication-config" content="http://www.vivian.tk/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
-	<!--Stylesheets/Scripts-->
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="bootstrap/css/custom.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	  <!--[if lt IE 9]>
-	    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	  <![endif]-->
+  <title>Class Notes</title>
+  <!--Favicons-->
+  <link rel="apple-touch-icon" sizes="57x57" href="http://www.vivian.tk/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://www.vivian.tk/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://www.vivian.tk/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://www.vivian.tk/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://www.vivian.tk/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://www.vivian.tk/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://www.vivian.tk/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://www.vivian.tk/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://www.vivian.tk/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="http://www.vivian.tk/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://www.vivian.tk/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="http://www.vivian.tk/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://www.vivian.tk/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="http://www.vivian.tk/manifest.json">
+  <link rel="shortcut icon" href="http://www.vivian.tk/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="http://www.vivian.tk/mstile-144x144.png">
+  <meta name="msapplication-config" content="http://www.vivian.tk/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <!--Stylesheets/Scripts-->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap/css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   <!--Scripts-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <nav class="navbar navbar-default">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              	<span class="sr-only">Toggle navigation</span>
-              	<span class="icon-bar"></span>
-              	<span class="icon-bar"></span>
-          	 	<span class="icon-bar"></span>
-          	</button>
-	      	<a class="navbar-brand" href="http://www.vivian.tk">
-	        	<img alt="Logo" src="http://www.vivian.tk/favicon-32x32.png">
-	      	</a>
-    	</div>
-    	<div class="collapse navbar-collapse" id="navbar">
-			<ul class="nav navbar-nav">
-				<li><a href="about">About</a></li>
-				<li><a href="projects">Projects</a></li>
-				<li class="active"><a href="notes">Class Notes</a></li>
-			</ul>
-		</div>
-	</div>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          <a class="navbar-brand" href="http://www.vivian.tk">
+            <img alt="Logo" src="http://www.vivian.tk/favicon-32x32.png">
+          </a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        <li><a href="about">About</a></li>
+        <li><a href="projects">Projects</a></li>
+        <li class="active"><a href="notes">Class Notes</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 <body>
-	<div class="container">
-		<div class="col-md-12">
-			<div class="alert alert-info alert-dismissible" role="alert">
-	  		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	  		<strong>Disclaimer!</strong>
-	  		<br>These are my personal notes, and I do not claim that they will increase your grade in any way. I post these because it forces me to take better notes.
-	  		<br><br>I hope you find these useful! Notes are usually posted by 9 p.m. on the day of lecture.
-	  		<br><br><b>Feeling generous? <a href="http://www.amazon.com/gp/registry/wishlist/228SA1P2VYN9V" target="blank">Buy me pens/pencils!</b></a>
-			</div>
-		</div>
-		<div class="col-md-6">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-		    	<h3 class="panel-title">Physics 7B - Lanzara, Sec. 3</h3>
-		  	</div>
-		  	<div class="panel-body">
-		  		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#physics7b" aria-expanded="false" aria-controls="physics7b">Chapter Titles</button>
-					<div class="collapse" id="physics7b">
-					  <div class="well" style="width:100%; height:200px; overflow-y:scroll; margin-bottom: 0px;">
-					  	<ol start="17">
-							<li>Temperature, Thermal Expansion, and the Ideal Gas Law</li>
-							<li>Kinetic Theory of Gases</li>
-							<li>Heat and the First Law of Thermodynamics</li>
-							<li>Second Law of Thermodynamics</li>
-							<li>Electric Charge and Electric Field</li>
-							<li>Gauss's Law</li>
-							<li>Electric Potential</li>
-							<li>Capacitance, Dielectrics, Electrical Energy Storage</li>
-							<li>Electric Currents and Resistance</li>
-							<li>DC Circuits
-							<li>Magnetism</li>
-							<li>Sources of Magnetic Field</li>
-							<li>Electromagnetic Induction and Faraday's Law</li>
-							<li>Inductance, Electromagnetic Oscillations, and AC Circuits</li>
-							</ol>
-				  	</div>
-					</div>
-					<br><br>
-		    	<b>Week 1</b>
-		    	<ul>
-		    		<li><a href="http://www.vivian.tk/img/physics7b/08-27-15.pdf" target="blank">08/27 - Chapter 17</a></li>
-		    	</ul>
-		    	<b>Week 2</b>
-		    	<ul>
-		    		<li><a href="http://www.vivian.tk/img/physics7b/09-01-15.pdf" target="blank">09/01 - Chapter 18</a></li>
-		    		<li><a href="http://www.vivian.tk/img/physics7b/09-03-15.pdf" target="blank">09/03 - Chapter 19</a></li>
-		    	</ul>
-		    	<b>Week 3</b>
-		    	<ul>
-		    		<li><a href="http://www.vivian.tk/img/physics7b/09-08-15.pdf" target="blank">09/08 - Chapter 19</a></li>
-		    		<li><a href="http://www.vivian.tk/img/physics7b/09-10-15.pdf" target="blank">09/10 - Chapter 19</a></li>
-		    	</ul>
-		    	<b>Week 4</b>
-		    	<ul>
-		    		<li><a href="http://www.vivian.tk/img/physics7b/09-15-15.pdf" target="blank">09/15 - Chapter 20</a></li>
-		    		<li><a href="http://www.vivian.tk/img/physics7b/09-17-15.pdf" target="blank">09/17 - Chapter 20</a></li>
-		    	</ul>
-		    	<b>Week 5</b>
-		    	<ul>
-		    		<li><a href="http://www.vivian.tk/img/physics7b/09-22-15.pdf" target="blank">09/22 - Chapter 21</a></li>
-		    		<li><a href="http://www.vivian.tk/img/physics7b/09-24-15.pdf" target="blank">09/24 - Chapter 21</a></li>
-		    	</ul>
-		    	<b>Week 6</b>
-		    	<ul>
-		    		<li><a href="http://www.vivian.tk/img/physics7b/09-29-15.pdf" target="blank">09/29 - Chapter 21</a></li>
-		    		<li><a href="http://www.vivian.tk/img/physics7b/10-01-15.pdf" target="blank">10/01 - Chapter 22</a></li>
-		    	</ul>
-		    	<b>Week 7</b>
-		    	<ul>
-		    		<li><a href="http://www.vivian.tk/img/physics7b/10-06-15.pdf" target="blank">10/06 - Chapter 22</a></li>
-		    		<li><a href="http://www.vivian.tk/img/physics7b/10-08-15.pdf" target="blank">10/08 - Chapter 23</a></li>
-		    	</ul>
-		    	<b>Week 8</b>
-		    		<ul>
-		    			<li><a href="http://www.vivian.tk/img/physics7b/10-13-15.pdf" target="blank">10/13 - Chapter 23</a></li>
-		    			<li><a href="http://www.vivian.tk/img/physics7b/10-15-15.pdf" target="blank">10/15 - Chapter 24</a></li>
-		    		</ul>
-		    	<b>Week 9</b>
-		    		<ul>
-		    			<li><a href="http://www.vivian.tk/img/physics7b/10-20-15.pdf" target="blank">10/20 - Chapter 25</a></li>
-		    			<li><a href="http://www.vivian.tk/img/physics7b/10-22-15.pdf" target="blank">10/22 - Chapter 25</a></li>
-		    			<ul>
-		    				<li><a href="http://www.vivian.tk/img/physics7b/10-22-15-2.pdf" target="blank">Alternating Current (assigned during lecture)</a></li>
-		    			</ul>
-		    		</ul>
-		    	<b>Week 10</b>
-		    		<ul>
-		    			<li><a href="http://www.vivian.tk/img/physics7b/10-27-15.pdf" target="blank">10/27 - Chapter 26</a></li>
-		    			<li><a href="http://www.vivian.tk/img/physics7b/10-29-15.pdf" target="blank">10/29 - Chapters 26-27</a></li>
-		    		</ul>
-		    	<b>Week 11</b>
-		    		<ul>
-		    			<li><a href="http://www.vivian.tk/img/physics7b/11-03-15.pdf" target="blank">11/03 - Chapter 27</a></li>
-							<li><a href="http://www.vivian.tk/img/physics7b/11-05-15.pdf" target="blank">11/05 - Chapter 27</a></li>
-		    		</ul>
-					<b>Week 12</b>
-		    		<ul>
-		    			<li><a href="http://www.vivian.tk/img/physics7b/11-10-15.pdf" target="blank">11/10 - Chapter 27</a></li>
-							<li><a href="http://www.vivian.tk/img/physics7b/11-12-15.pdf" target="blank">11/12 - Chapter 28 (NOT UPLOADED)</a></li>
-		    		</ul>
-					<b>Week 13</b>
-		    		<ul>
-		    			<li><a href="http://www.vivian.tk/img/physics7b/11-17-15.pdf" target="blank">11/17 - Chapter 28</a></li>
-							<li><a href="http://www.vivian.tk/img/physics7b/11-19-15.pdf" target="blank">11/19 - Chapter 29</a></li>
-		    		</ul>
-		    	<b>Week 14</b>
-		    		<ul>
-		    			<li><a href="http://www.vivian.tk/img/physics7b/11-24-15.pdf" target="blank">11/24 - Chapter 29</a></li>
-		    		</ul>
-		    	<b>Week 15</b> <i class="fa fa-star-o"></i>
-		    		<ul>
-		    			<li><a href="http://www.vivian.tk/img/physics7b/12-01-15.pdf" target="blank">12/01 - Chapter 30</a></li>
-							<li><a href="http://www.vivian.tk/img/physics7b/12-03-15.pdf" target="blank">12/03 - Chapter 30</a></li>
-		    		</ul>
-			  </div>
-		  </div>
-	  </div>
-	  <div class="col-md-6">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-	    		<h3 class="panel-title">Math 53 - Gomez, Sec. 1</h3>
-	  		</div>
-		  	<div class="panel-body">
-		  		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#math53" aria-expanded="false" aria-controls="math53">Chapter Titles</button>
-					<div class="collapse" id="math53">
-					  <div class="well" style="width:100%; height:200px; overflow-y:scroll; margin-bottom: 0px;">
-							<strong>Chapter 10. Parametric Equations and Polar Coordinates</strong>
-							<ul>
-								<li>10.1 Curves Defined By Parametric Equations</li>
-								<li>10.2 Calculus with Parametric Curves</li>
-								<li>10.3 Polar Coordinates</li>
-								<li>10.4 Areas and Lengths in Polar Coordinates</li>
-								<li>10.5 Conic Sections</li>
-								<li>10.6 Conic Sections in Polar Coordinates (omitted)</li>
-							</ul>
-							<strong>Chapter 12. Vectors and the Geometry of Space</strong>
-							<ul>
-								<li>12.1 Three-Dimensional Coordinate Systems</li>
-								<li>12.2 Vectors</li>
-								<li>12.3 The Dot Product</li>
-								<li>12.4 The Cross Product</li>
-								<li>12.5 Equations Of Lines And Planes</li>
-								<li>12.6 Cylinders and Quadratic Surfaces (omitted)</li>
-							</ul>
-							<strong>Chapter 13. Vector Functions</strong>
-							<ul>
-								<li>13.1 Vector Functions and Space Curves</li>
-								<li>13.2 Derivatives and Integrals Of Vector Functions</li>
-								<li>13.3 Arc Length and Curvature (omitted)</li>
-								<li>13.4 Motion In Space: Velocity and Acceleration (omitted)</li>
-							</ul>
-							<strong>Chapter 14. Partial Derivatives</strong>
-							<ul>
-								<li>14.1 Functions of Several Variables</li>
-								<li>14.2 Limits and Continuity</li>
-								<li>14.3 Partial Derivatives</li>
-								<li>14.4 Tangent Planes and Linear Approximations</li>
-								<li>14.5 The Chain Rule</li>
-								<li>14.6 Directional Derivatives and The Gradient Vector</li>
-								<li>14.7 Maximum and Minimum Values</li>
-								<li>14.8 Lagrange Multipliers</li>
-							</ul>
-							<strong>Chapter 15. Multiple Integrals</strong>
-							<ul>
-								<li>15.1 Double Integrals Over Rectangles</li>
-								<li>15.2 Iterated Integrals</li>
-								<li>15.3 Double Integrals Over General Regions</li>
-								<li>15.4 Double Integrals in Polar Coordinates</li>
-								<li>15.5 Applications of Double Integrals</li>
-								<li>15.6 Surface Area</li>
-								<li>15.7 Triple Integrals</li>
-								<li>15.8 Triple Integrals in Cylindrical Coordinates</li>
-								<li>15.9 Triple Integrals in Spherical Coordinates</li>
-								<li>15.10 Change of Variables in Multiple Integrals</li>
-							</ul>
-							<strong>Chapter 16. Vector Calculus</strong>
-							<ul>
-								<li>16.1 Vector Fields</li>
-								<li>16.2 Line Integrals</li>
-								<li>16.3 The Fundamental Theorem for Line Integrals</li>
-								<li>16.4 Green’s Theorem</li>
-								<li>16.5 Curl and Divergence</li>
-								<li>16.6 Parametric Surfaces and Their Areas</li>
-								<li>16.7 Surface Integrals</li>
-								<li>16.8 Stoke’s Theorem</li>
-								<li>16.9 The Divergence Theorem</li>
-								<li>16.10 Summary</li>
-							</ul>
-						</div>
-					</div>
-					<br><br>
-		    	<b>Week 1</b>
-		    	<ul>
-		    		<li><a href="http://www.vivian.tk/img/math53/08-26-15.pdf" target="blank">08/26 - Section 10.1</a></li>
-		    		<li><a href="http://www.vivian.tk/img/math53/08-28-15.pdf" target="blank">08/28 - Section 10.2</a></li>
-		    	</ul>
-		    	<b>Week 2</b>
-		    	<ul>
-		    		<li><a href="http://www.vivian.tk/img/math53/08-31-15.pdf" target="blank">09/31 - Section 10.3</a></li>
-		    		<li><a href="http://www.vivian.tk/img/math53/09-02-15.pdf" target="blank">09/02 - Section 10.4</a></li>
-		    		<li><a href="http://www.vivian.tk/img/math53/09-04-15.pdf" target="blank">09/04 - Section 10.5</a></li>
-		    	</ul>
-		    	<b>Week 3</b>
-		    	<ul>
-		    		<li><a href="http://www.vivian.tk/img/math53/09-09-15.pdf" target="blank">09/09 - Sections 12.1 - 12.2</a></li>
-		    		<li><a href="http://www.vivian.tk/img/math53/09-11-15.pdf" target="blank">09/11 - Section 12.3</a></li>
-		    	</ul>
-		    	<b>Week 4</b>
-		    	<ul>
-		    		<li><a href="http://www.vivian.tk/img/math53/09-14-15.pdf" target="blank">09/14 - Section 12.4</a></li>
-		    		<li><a href="http://www.vivian.tk/img/math53/09-16-15.pdf" target="blank">09/16 - Sections 12.5 - 12.6</a></li>
-		    		<li><a href="http://www.vivian.tk/img/math53/09-18-15.pdf" target="blank">09/18 - Sections 13.1 - 13.2</a></li>
-		    	</ul>
-		    	<b>Week 5</b>
-		    	<ul>
-						<li><a href="http://www.vivian.tk/img/math53/09-23-15.pdf" target="blank">09/23 - Section 14.1</a></li>
-		    		<li><a href="http://www.vivian.tk/img/math53/09-25-15.pdf" target="blank">09/25 - Section 14.2</a></li>
-		    	</ul>
-		    	<b>Week 6</b>
-		    	<ul>
-						<li><a href="http://www.vivian.tk/img/math53/09-28-15.pdf" target="blank">09/28 - Section 14.3</a></li>
-		    		<li><a href="http://www.vivian.tk/img/math53/09-30-15.pdf" target="blank">09/30 - Section 14.4</a></li>
-		    		<li><a href="http://www.vivian.tk/img/math53/10-02-15.pdf" target="blank">10/02 - Section 14.5</a></li>
-		    	</ul>
-		    	<b>Week 7</b>
-		    	<ul>
-						<li><a href="http://www.vivian.tk/img/math53/10-05-15.pdf" target="blank">10/05 - Section 14.6</a></li>
-						<li><a href="http://www.vivian.tk/img/math53/10-07-15.pdf" target="blank">10/07 - Section 14.7</a></li>
-						<li><a href="http://www.vivian.tk/img/math53/10-09-15.pdf" target="blank">10/09 - Section 14.8</a></li>
-		    	</ul>
-		    	<b>Week 8</b>
-		    	<ul>
-		    		<li><a href="http://www.vivian.tk/img/math53/10-12-15.pdf" target="blank">10/12 - Section 15.1</a></li>
-		    		<li><a href="http://www.vivian.tk/img/math53/10-14-15.pdf" target="blank">10/14 - Section 15.2</a></li>
-		    		<li><a href="http://www.vivian.tk/img/math53/10-16-15.pdf" target="blank">10/16 - Section 15.3</a></li>
-		    	</ul>
-		    	<b>Week 9</b>
-		    	<ul>
-		    		<li><a href="http://www.vivian.tk/img/math53/10-19-15.pdf" target="blank">10/19 - Section 15.4</a></li>
-		    		<li><a href="http://www.vivian.tk/img/math53/10-21-15.pdf" target="blank">10/21 - Section 15.5</a></li>
-		    		<li><a href="http://www.vivian.tk/img/math53/10-23-15.pdf" target="blank">10/23 - Section 15.6</a></li>
-		    	</ul>
-		    	<b>Week 10</b>
-		    	<ul>
-		    		<li><a href="http://www.vivian.tk/img/math53/10-26-15.pdf" target="blank">10/26 - Section 15.7</a></li>
-		    		<li><a href="http://www.vivian.tk/img/math53/10-28-15.pdf" target="blank">10/28 - Section 15.8</a></li>
-						<li><a href="http://www.vivian.tk/img/math53/10-30-15.pdf" target="blank">10/30 - Section 15.9</a></li>
-		    	</ul>
-					<b>Week 11</b>
-		    	<ul>
-		    		<li><a href="http://www.vivian.tk/img/math53/11-02-15.pdf" target="blank">11/02 - Section 15.10</a></li>
-		    		<li><a href="http://www.vivian.tk/img/math53/11-06-15.pdf" target="blank">11/06 - Section 16.1</a></li>
-		    	</ul>
-					<b>Week 12</b>
-					<ul>
-						<li><a href="http://www.vivian.tk/img/math53/11-09-15.pdf" target="blank">11/09 - Section 16.2</a></li>
-						<li><a href="http://www.vivian.tk/img/math53/11-13-15.pdf" target="blank">11/13 - Section 16.3</a></li>
-					</ul>
-					<b>Week 13</b>
-					<ul>
-						<li><a href="http://www.vivian.tk/img/math53/11-16-15.pdf" target="blank">11/16 - Section 16.4</a></li>
-						<li><a href="http://www.vivian.tk/img/math53/11-18-15.pdf" target="blank">11/18 - Section 16.5</a></li>
-						<li><a href="http://www.vivian.tk/img/math53/11-20-15.pdf" target="blank">11/20 - Section 16.6</a></li>
-					</ul>
-					<b>Week 14</b>
-					<ul>
-						<li><a href="http://www.vivian.tk/img/math53/11-18-15.pdf" target="blank">11/23 - Section 16.7</a></li>
-					</ul>
-					<b>Week 15</b> <i class="glyphicon glyphicon-sunglasses"></i>
-					<ul>
-						<li><a href="http://www.vivian.tk/img/math53/11-30-15.pdf" target="blank">11/30 - Section 16.8</a></li>
-						<li><a href="http://www.vivian.tk/img/math53/12-02-15.pdf" target="blank">12/02 - Section 16.9</a></li>
-					</ul>
-		  	</div>
-			</div>
-		</div>
-	</div>
-</div>
+  <div class="container">
+    <div class="col-md-12">
+      <div class="alert alert-info alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Disclaimer!</strong>
+        <br>These are my personal notes, and I do not claim that they will increase your grade in any way. I post these because it forces me to take better notes.
+        <br><br>I hope you find these useful! Notes are usually posted by 9 p.m. on the day of lecture.
+        <br><br><b>Feeling generous? <a href="http://www.amazon.com/gp/registry/wishlist/228SA1P2VYN9V" target="blank">Buy me pens/pencils!</b></a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><a data-toggle="collapse" href="#physics7b" class="closeall">Fall 2015: Physics 7B - Lanzara, Sec. 3 <i class="fa fa-angle-double-right"></i></a></h3>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+            <a data-toggle="collapse" href="#math53" class="closeall"><h3 class="panel-title">Fall 2015: Math 53 - Gomez, Sec. 1 <i class="fa fa-angle-double-right"></i></a></h3>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+            <a data-toggle="collapse" href="#ee16a" class="closeall"><h3 class="panel-title">Spring 2016: EE 16A - Ayazifar & Elon <i class="fa fa-angle-double-right"></i></a></h3>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <a data-toggle="collapse" href="#math54" class="closeall"><h3 class="panel-title">Spring 2016: Math 54 - Yuan, Sec. 1 <i class="fa fa-angle-double-right"></i></a></h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div id="physics7b" class="panel-collapse collapse">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#physics7bc" aria-expanded="false" aria-controls="physics7bc">Chapter Titles</button>
+            <div class="collapse" id="physics7bc">
+              <div class="well" style="width:100%; height:200px; overflow-y:scroll; margin-bottom: 0px;">
+                <ol start="17">
+                <li>Temperature, Thermal Expansion, and the Ideal Gas Law</li>
+                <li>Kinetic Theory of Gases</li>
+                <li>Heat and the First Law of Thermodynamics</li>
+                <li>Second Law of Thermodynamics</li>
+                <li>Electric Charge and Electric Field</li>
+                <li>Gauss's Law</li>
+                <li>Electric Potential</li>
+                <li>Capacitance, Dielectrics, Electrical Energy Storage</li>
+                <li>Electric Currents and Resistance</li>
+                <li>DC Circuits
+                <li>Magnetism</li>
+                <li>Sources of Magnetic Field</li>
+                <li>Electromagnetic Induction and Faraday's Law</li>
+                <li>Inductance, Electromagnetic Oscillations, and AC Circuits</li>
+                </ol>
+              </div>
+            </div>
+            <br><br>
+            <b>Week 1</b>
+            <ul>
+              <li><a href="http://www.vivian.tk/img/physics7b/08-27-15.pdf" target="blank">08/27 - Chapter 17</a></li>
+            </ul>
+            <b>Week 2</b>
+            <ul>
+              <li><a href="http://www.vivian.tk/img/physics7b/09-01-15.pdf" target="blank">09/01 - Chapter 18</a></li>
+              <li><a href="http://www.vivian.tk/img/physics7b/09-03-15.pdf" target="blank">09/03 - Chapter 19</a></li>
+            </ul>
+            <b>Week 3</b>
+            <ul>
+              <li><a href="http://www.vivian.tk/img/physics7b/09-08-15.pdf" target="blank">09/08 - Chapter 19</a></li>
+              <li><a href="http://www.vivian.tk/img/physics7b/09-10-15.pdf" target="blank">09/10 - Chapter 19</a></li>
+            </ul>
+            <b>Week 4</b>
+            <ul>
+              <li><a href="http://www.vivian.tk/img/physics7b/09-15-15.pdf" target="blank">09/15 - Chapter 20</a></li>
+              <li><a href="http://www.vivian.tk/img/physics7b/09-17-15.pdf" target="blank">09/17 - Chapter 20</a></li>
+            </ul>
+            <b>Week 5</b>
+            <ul>
+              <li><a href="http://www.vivian.tk/img/physics7b/09-22-15.pdf" target="blank">09/22 - Chapter 21</a></li>
+              <li><a href="http://www.vivian.tk/img/physics7b/09-24-15.pdf" target="blank">09/24 - Chapter 21</a></li>
+            </ul>
+            <b>Week 6</b>
+            <ul>
+              <li><a href="http://www.vivian.tk/img/physics7b/09-29-15.pdf" target="blank">09/29 - Chapter 21</a></li>
+              <li><a href="http://www.vivian.tk/img/physics7b/10-01-15.pdf" target="blank">10/01 - Chapter 22</a></li>
+            </ul>
+            <b>Week 7</b>
+            <ul>
+              <li><a href="http://www.vivian.tk/img/physics7b/10-06-15.pdf" target="blank">10/06 - Chapter 22</a></li>
+              <li><a href="http://www.vivian.tk/img/physics7b/10-08-15.pdf" target="blank">10/08 - Chapter 23</a></li>
+            </ul>
+            <b>Week 8</b>
+              <ul>
+                <li><a href="http://www.vivian.tk/img/physics7b/10-13-15.pdf" target="blank">10/13 - Chapter 23</a></li>
+                <li><a href="http://www.vivian.tk/img/physics7b/10-15-15.pdf" target="blank">10/15 - Chapter 24</a></li>
+              </ul>
+            <b>Week 9</b>
+              <ul>
+                <li><a href="http://www.vivian.tk/img/physics7b/10-20-15.pdf" target="blank">10/20 - Chapter 25</a></li>
+                <li><a href="http://www.vivian.tk/img/physics7b/10-22-15.pdf" target="blank">10/22 - Chapter 25</a></li>
+                <ul>
+                  <li><a href="http://www.vivian.tk/img/physics7b/10-22-15-2.pdf" target="blank">Alternating Current (assigned during lecture)</a></li>
+                </ul>
+              </ul>
+            <b>Week 10</b>
+              <ul>
+                <li><a href="http://www.vivian.tk/img/physics7b/10-27-15.pdf" target="blank">10/27 - Chapter 26</a></li>
+                <li><a href="http://www.vivian.tk/img/physics7b/10-29-15.pdf" target="blank">10/29 - Chapters 26-27</a></li>
+              </ul>
+            <b>Week 11</b>
+              <ul>
+                <li><a href="http://www.vivian.tk/img/physics7b/11-03-15.pdf" target="blank">11/03 - Chapter 27</a></li>
+                <li><a href="http://www.vivian.tk/img/physics7b/11-05-15.pdf" target="blank">11/05 - Chapter 27</a></li>
+              </ul>
+            <b>Week 12</b>
+              <ul>
+                <li><a href="http://www.vivian.tk/img/physics7b/11-10-15.pdf" target="blank">11/10 - Chapter 27</a></li>
+                <li><a href="http://www.vivian.tk/img/physics7b/11-12-15.pdf" target="blank">11/12 - Chapter 28 (NOT UPLOADED)</a></li>
+              </ul>
+            <b>Week 13</b>
+              <ul>
+                <li><a href="http://www.vivian.tk/img/physics7b/11-17-15.pdf" target="blank">11/17 - Chapter 28</a></li>
+                <li><a href="http://www.vivian.tk/img/physics7b/11-19-15.pdf" target="blank">11/19 - Chapter 29</a></li>
+              </ul>
+            <b>Week 14</b>
+              <ul>
+                <li><a href="http://www.vivian.tk/img/physics7b/11-24-15.pdf" target="blank">11/24 - Chapter 29</a></li>
+              </ul>
+            <b>Week 15</b> <i class="fa fa-star-o"></i>
+              <ul>
+                <li><a href="http://www.vivian.tk/img/physics7b/12-01-15.pdf" target="blank">12/01 - Chapter 30</a></li>
+                <li><a href="http://www.vivian.tk/img/physics7b/12-03-15.pdf" target="blank">12/03 - Chapter 30</a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div id="math53" class="panel-collapse collapse">
+        <div class="panel panel-default">
+          <div class="panel-body">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#math53c" aria-expanded="false" aria-controls="math53c">Chapter Titles</button>
+          <div class="collapse" id="math53c">
+            <div class="well" style="width:100%; height:200px; overflow-y:scroll; margin-bottom: 0px;">
+              <strong>Chapter 10. Parametric Equations and Polar Coordinates</strong>
+              <ul>
+                <li>10.1 Curves Defined By Parametric Equations</li>
+                <li>10.2 Calculus with Parametric Curves</li>
+                <li>10.3 Polar Coordinates</li>
+                <li>10.4 Areas and Lengths in Polar Coordinates</li>
+                <li>10.5 Conic Sections</li>
+                <li>10.6 Conic Sections in Polar Coordinates (omitted)</li>
+              </ul>
+              <strong>Chapter 12. Vectors and the Geometry of Space</strong>
+              <ul>
+                <li>12.1 Three-Dimensional Coordinate Systems</li>
+                <li>12.2 Vectors</li>
+                <li>12.3 The Dot Product</li>
+                <li>12.4 The Cross Product</li>
+                <li>12.5 Equations Of Lines And Planes</li>
+                <li>12.6 Cylinders and Quadratic Surfaces (omitted)</li>
+              </ul>
+              <strong>Chapter 13. Vector Functions</strong>
+              <ul>
+                <li>13.1 Vector Functions and Space Curves</li>
+                <li>13.2 Derivatives and Integrals Of Vector Functions</li>
+                <li>13.3 Arc Length and Curvature (omitted)</li>
+                <li>13.4 Motion In Space: Velocity and Acceleration (omitted)</li>
+              </ul>
+              <strong>Chapter 14. Partial Derivatives</strong>
+              <ul>
+                <li>14.1 Functions of Several Variables</li>
+                <li>14.2 Limits and Continuity</li>
+                <li>14.3 Partial Derivatives</li>
+                <li>14.4 Tangent Planes and Linear Approximations</li>
+                <li>14.5 The Chain Rule</li>
+                <li>14.6 Directional Derivatives and The Gradient Vector</li>
+                <li>14.7 Maximum and Minimum Values</li>
+                <li>14.8 Lagrange Multipliers</li>
+              </ul>
+              <strong>Chapter 15. Multiple Integrals</strong>
+              <ul>
+                <li>15.1 Double Integrals Over Rectangles</li>
+                <li>15.2 Iterated Integrals</li>
+                <li>15.3 Double Integrals Over General Regions</li>
+                <li>15.4 Double Integrals in Polar Coordinates</li>
+                <li>15.5 Applications of Double Integrals</li>
+                <li>15.6 Surface Area</li>
+                <li>15.7 Triple Integrals</li>
+                <li>15.8 Triple Integrals in Cylindrical Coordinates</li>
+                <li>15.9 Triple Integrals in Spherical Coordinates</li>
+                <li>15.10 Change of Variables in Multiple Integrals</li>
+              </ul>
+              <strong>Chapter 16. Vector Calculus</strong>
+              <ul>
+                <li>16.1 Vector Fields</li>
+                <li>16.2 Line Integrals</li>
+                <li>16.3 The Fundamental Theorem for Line Integrals</li>
+                <li>16.4 Green’s Theorem</li>
+                <li>16.5 Curl and Divergence</li>
+                <li>16.6 Parametric Surfaces and Their Areas</li>
+                <li>16.7 Surface Integrals</li>
+                <li>16.8 Stoke’s Theorem</li>
+                <li>16.9 The Divergence Theorem</li>
+                <li>16.10 Summary</li>
+              </ul>
+            </div>
+          </div>
+          <br><br>
+          <b>Week 1</b>
+          <ul>
+            <li><a href="http://www.vivian.tk/img/math53/08-26-15.pdf" target="blank">08/26 - Section 10.1</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/08-28-15.pdf" target="blank">08/28 - Section 10.2</a></li>
+          </ul>
+          <b>Week 2</b>
+          <ul>
+            <li><a href="http://www.vivian.tk/img/math53/08-31-15.pdf" target="blank">09/31 - Section 10.3</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/09-02-15.pdf" target="blank">09/02 - Section 10.4</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/09-04-15.pdf" target="blank">09/04 - Section 10.5</a></li>
+          </ul>
+          <b>Week 3</b>
+          <ul>
+            <li><a href="http://www.vivian.tk/img/math53/09-09-15.pdf" target="blank">09/09 - Sections 12.1 - 12.2</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/09-11-15.pdf" target="blank">09/11 - Section 12.3</a></li>
+          </ul>
+          <b>Week 4</b>
+          <ul>
+            <li><a href="http://www.vivian.tk/img/math53/09-14-15.pdf" target="blank">09/14 - Section 12.4</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/09-16-15.pdf" target="blank">09/16 - Sections 12.5 - 12.6</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/09-18-15.pdf" target="blank">09/18 - Sections 13.1 - 13.2</a></li>
+          </ul>
+          <b>Week 5</b>
+          <ul>
+            <li><a href="http://www.vivian.tk/img/math53/09-23-15.pdf" target="blank">09/23 - Section 14.1</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/09-25-15.pdf" target="blank">09/25 - Section 14.2</a></li>
+          </ul>
+          <b>Week 6</b>
+          <ul>
+            <li><a href="http://www.vivian.tk/img/math53/09-28-15.pdf" target="blank">09/28 - Section 14.3</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/09-30-15.pdf" target="blank">09/30 - Section 14.4</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/10-02-15.pdf" target="blank">10/02 - Section 14.5</a></li>
+          </ul>
+          <b>Week 7</b>
+          <ul>
+            <li><a href="http://www.vivian.tk/img/math53/10-05-15.pdf" target="blank">10/05 - Section 14.6</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/10-07-15.pdf" target="blank">10/07 - Section 14.7</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/10-09-15.pdf" target="blank">10/09 - Section 14.8</a></li>
+          </ul>
+          <b>Week 8</b>
+          <ul>
+            <li><a href="http://www.vivian.tk/img/math53/10-12-15.pdf" target="blank">10/12 - Section 15.1</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/10-14-15.pdf" target="blank">10/14 - Section 15.2</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/10-16-15.pdf" target="blank">10/16 - Section 15.3</a></li>
+          </ul>
+          <b>Week 9</b>
+          <ul>
+            <li><a href="http://www.vivian.tk/img/math53/10-19-15.pdf" target="blank">10/19 - Section 15.4</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/10-21-15.pdf" target="blank">10/21 - Section 15.5</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/10-23-15.pdf" target="blank">10/23 - Section 15.6</a></li>
+          </ul>
+          <b>Week 10</b>
+          <ul>
+            <li><a href="http://www.vivian.tk/img/math53/10-26-15.pdf" target="blank">10/26 - Section 15.7</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/10-28-15.pdf" target="blank">10/28 - Section 15.8</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/10-30-15.pdf" target="blank">10/30 - Section 15.9</a></li>
+          </ul>
+          <b>Week 11</b>
+          <ul>
+            <li><a href="http://www.vivian.tk/img/math53/11-02-15.pdf" target="blank">11/02 - Section 15.10</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/11-06-15.pdf" target="blank">11/06 - Section 16.1</a></li>
+          </ul>
+          <b>Week 12</b>
+          <ul>
+            <li><a href="http://www.vivian.tk/img/math53/11-09-15.pdf" target="blank">11/09 - Section 16.2</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/11-13-15.pdf" target="blank">11/13 - Section 16.3</a></li>
+          </ul>
+          <b>Week 13</b>
+          <ul>
+            <li><a href="http://www.vivian.tk/img/math53/11-16-15.pdf" target="blank">11/16 - Section 16.4</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/11-18-15.pdf" target="blank">11/18 - Section 16.5</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/11-20-15.pdf" target="blank">11/20 - Section 16.6</a></li>
+          </ul>
+          <b>Week 14</b>
+          <ul>
+            <li><a href="http://www.vivian.tk/img/math53/11-18-15.pdf" target="blank">11/23 - Section 16.7</a></li>
+          </ul>
+          <b>Week 15</b> <i class="glyphicon glyphicon-sunglasses"></i>
+          <ul>
+            <li><a href="http://www.vivian.tk/img/math53/11-30-15.pdf" target="blank">11/30 - Section 16.8</a></li>
+            <li><a href="http://www.vivian.tk/img/math53/12-02-15.pdf" target="blank">12/02 - Section 16.9</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+      <div id="ee16a" class="panel-collapse collapse">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ee16ac" aria-expanded="false" aria-controls="ee16ac">Chapter Titles</button>
+            <div class="collapse" id="ee16ac">
+              <div class="well" style="width:100%; height:200px; overflow-y:scroll; margin-bottom: 0px;">
+                Coming Soon!
+              </div>
+            </div>
+            <br><br>
+            Coming Soon!
+            </div>
+        </div>
+      </div>
+      <div id="math54" class="panel-collapse collapse">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#math54c" aria-expanded="false" aria-controls="math54c">Chapter Titles</button>
+            <div class="collapse" id="math54c">
+              <div class="well" style="width:100%; height:200px; overflow-y:scroll; margin-bottom: 0px;">
+                Coming Soon!
+              </div>
+            </div>
+            <br><br>
+            Coming Soon!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 <div class="se-pre-con">
   <div class="signal"></div>
@@ -344,13 +389,19 @@
 <div id="footer-container">
 </div>
 <script>
-	$(document).ready(function() {
-	$('#footer-container').load('http://www.vivian.tk/footer.html');
-	});
-	// Loader
+  $(document).ready(function() {
+  $('#footer-container').load('http://www.vivian.tk/footer.html');
+  });
+  // Loader
   $(window).load(function() {
     // Animate loader off screen
     $(".se-pre-con").delay(300).fadeOut(800);
+  });
+
+  //Only 1
+  $('.closeall').click(function(){
+    $('.panel-collapse.in')
+      .collapse('hide');
   });
 </script>
 
