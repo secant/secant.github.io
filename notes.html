@@ -59,6 +59,12 @@
   </div>
 </nav>
 <body>
+  <style>
+    body a.disabled{
+        color: #666;
+        text-decoration: none;
+    }
+  </style>
   <div class="container">
     <div class="col-md-12">
       <div class="alert alert-info alert-dismissible" role="alert">
@@ -182,7 +188,7 @@
             <b>Week 12</b>
               <ul>
                 <li><a href="http://www.vivian.tk/img/physics7b/11-10-15.pdf" target="_blank">11/10 - Chapter 27</a></li>
-                <li><a href="http://www.vivian.tk/img/physics7b/11-12-15.pdf" target="_blank">11/12 - Chapter 28 (NOT UPLOADED)</a></li>
+                <li><a href="http://www.vivian.tk/img/physics7b/11-12-15.pdf" target="_blank" class="disabled">11/12 - Chapter 28</a></li>
               </ul>
             <b>Week 13</b>
               <ul>
@@ -377,6 +383,11 @@
               <li><a href="http://www.vivian.tk/img/ee16a/01-26-16.pdf" target="_blank">01/26 - Solving Linear Systems</a></li>
               <li><a href="http://www.vivian.tk/img/ee16a/01-28-16.pdf" target="_blank">01/28 - Linear Independence</a></li>
             </ul>
+            <b>Week 3</b>
+            <ul>
+              <li><a href="http://www.vivian.tk/img/ee16a/02-02-16.pdf" target="_blank" class="disabled">02/04 - Solving Linear Systems</a></li>
+              <li><a href="http://www.vivian.tk/img/ee16a/02-04-16.pdf" target="_blank" class="disabled">01/28 - Linear Independence</a></li>
+            </ul>
             </div>
         </div>
       </div>
@@ -403,8 +414,17 @@
               <li><a href="http://www.vivian.tk/img/math54/01-25-16.pdf" target="_blank">01/25 - Section 1.3</a></li>
               <li><a href="http://www.vivian.tk/img/math54/01-26-16.pdf" target="_blank">01/26 - Discussion</a></li>
               <li><a href="http://www.vivian.tk/img/math54/01-27-16.pdf" target="_blank">01/27 - Sections 1.4 - 1.5</a></li>
-              <li><a href="http://www.vivian.tk/img/math54/01-28-16.pdf" target="_blank">01/18 - Discussion</a></li>
-              <li><!--a href="http://www.vivian.tk/img/math54/01-29-16.pdf" target="_blank"-->01/29 - Section ??</a></li>
+              <li><a href="http://www.vivian.tk/img/math54/01-28-16.pdf" target="_blank">01/28 - Discussion</a></li>
+              <li><a href="http://www.vivian.tk/img/math54/01-29-16.pdf" target="_blank">01/29 - Sections 1.7 - 1.8</a></li>
+            </ul>
+
+            <b>Week 3</b>
+            <ul>
+              <li><a href="http://www.vivian.tk/img/math54/02-01-16.pdf" target="_blank">02/01 - Sections 1.9 & 2 .1</a></li>
+              <li><a href="http://www.vivian.tk/img/math54/02-02-16.pdf" target="_blank" class="disabled">02/02 - Discussion</a></li>
+              <li><a href="http://www.vivian.tk/img/math54/02-03-16.pdf" target="_blank">02/03 - Sections 2.1 - 2.2</a></li>
+              <li><a href="http://www.vivian.tk/img/math54/02-04-16.pdf" target="_blank" class="disabled">02/04 - Discussion</a></li>
+              <li><a href="http://www.vivian.tk/img/math54/02-05-16.pdf" target="_blank" class="disabled">02/05 - Sections ???</a></li>
             </ul>
           </div>
         </div>
@@ -423,11 +443,17 @@
               <li><a href="http://www.vivian.tk/img/gws100ac/01-26-16.pdf" target="_blank">01/26 - How is the Wilderness Defined?</a></li>
               <li><a href="http://www.vivian.tk/img/gws100ac/01-28-16.pdf" target="_blank">01/28 - Settler Colonialism</a></li>
             </ul>
+
+            <b>Week 3</b>
+            <ul>
+              <li><a href="http://www.vivian.tk/img/gws100ac/02-02-16.pdf" target="_blank" class="disabled">02/02 - </a></li>
+              <li><a href="http://www.vivian.tk/img/gws100ac/02-04-16.pdf" target="_blank" class="disabled">02/04 - </a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <p align="right"><i><i class="fa fa-pencil"></i> Last updated: 01/28/16 &nbsp; &nbsp;</i></p>
+    <p align="right"><i><i class="fa fa-pencil"></i> Last updated: 02/03/16 &nbsp; &nbsp;</i></p>
   </div>
 </body>
 <div class="se-pre-con">
@@ -437,7 +463,14 @@
 </div>
 <script>
   $(document).ready(function() {
-  $('#footer-container').load('http://www.vivian.tk/footer.html');
+    $('#footer-container').load('http://www.vivian.tk/footer.html');
+    //Disable Links
+    $("a").each(function(){
+          if($(this).hasClass("disabled")){
+              $(this).removeAttr("href");
+              $(this).append(" <span class='label label-danger'>not posted</span>");
+          }
+      });
   });
   // Loader
   $(window).load(function() {
@@ -454,14 +487,15 @@
 
 <!-- Tracking -->
 <script type="text/javascript">
-var sc_project=10731625; 
-var sc_invisible=1; 
-var sc_security="333b9778"; 
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
+  var sc_project=10731625; 
+  var sc_invisible=1; 
+  var sc_security="333b9778"; 
+  var scJsHost = (("https:" == document.location.protocol) ?
+  "https://secure." : "http://www.");
+  document.write("<sc"+"ript type='text/javascript' src='" +
+  scJsHost+
+  "statcounter.com/counter/counter.js'></"+"script>");
+
 </script>
 <noscript><div class="statcounter"><a title="hit counter"
 href="http://statcounter.com/" target="_blank"><img
