@@ -92,7 +92,7 @@
     </div>
 </body>
 <div class="se-pre-con">
-  <br><br><div class="signal"></div>
+  <br><br><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div>
 </div>
 <div id="footer-container">
 </div>
@@ -101,7 +101,7 @@
 	// Wait for window load
   $(window).load(function() {
     // Animate loader off screen
-    $(".se-pre-con").delay(300).fadeOut(800);
+    $(".se-pre-con").delay(300).fadeOut(350);
     $('[data-toggle="popover"]').popover()
   });
   
