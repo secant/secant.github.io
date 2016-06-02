@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Folder Moving
-plugins_dir:  /_assets/_plugins
-layouts_dir:  /_assets/_layouts
-includes_dir: /_assets/_includes
+plugins_dir:  /assets/_plugins
+layouts_dir:  /assets/_layouts
+includes_dir: /assets/_includes
 
 # Site settings
 title: vivian fang
