@@ -1,0 +1,28 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Folder Moving
+plugins_dir:  /_assets/_plugins
+layouts_dir:  /_assets/_layouts
+includes_dir: /_assets/_includes
+
+# Site settings
+title: vivian fang
+email: v.fang@berkeley.edu
+description: EECS student @ UC Berkeley and a CS 61A UGSI.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://vivian.tk" # the base hostname & protocol for your site
+github_username:  secant
+
+# Build settings
+markdown: kramdown
+
+collections:
+  notes:
+    output: true
+    path: ""
+    permalink: "content/notes/:path"

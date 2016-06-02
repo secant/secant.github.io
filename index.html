@@ -1,138 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Vivian Fang - Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!--Favicons-->
-	<link rel="apple-touch-icon" sizes="57x57" href="http://www.vivian.tk/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="http://www.vivian.tk/apple-touch-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="http://www.vivian.tk/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="http://www.vivian.tk/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="http://www.vivian.tk/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="http://www.vivian.tk/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="http://www.vivian.tk/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="http://www.vivian.tk/apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="http://www.vivian.tk/apple-touch-icon-180x180.png">
-	<link rel="icon" type="image/png" href="http://www.vivian.tk/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="http://www.vivian.tk/android-chrome-192x192.png" sizes="192x192">
-	<link rel="icon" type="image/png" href="http://www.vivian.tk/favicon-96x96.png" sizes="96x96">
-	<link rel="icon" type="image/png" href="http://www.vivian.tk/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="http://www.vivian.tk/manifest.json">
-	<link rel="shortcut icon" href="http://www.vivian.tk/favicon.ico">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="msapplication-TileImage" content="http://www.vivian.tk/mstile-144x144.png">
-	<meta name="msapplication-config" content="http://www.vivian.tk/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
-	<!--Stylesheets/Scripts-->
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="bootstrap/css/custom.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	  <!--[if lt IE 9]>
-	    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	  <![endif]-->
-  <!--Scripts-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-</head>
-<style>
-  .btn-primary {
-    margin: 5px 0px 5px 0px;
-  }
-</style>
-<nav class="navbar navbar-default">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              	<span class="sr-only">Toggle navigation</span>
-              	<span class="icon-bar"></span>
-              	<span class="icon-bar"></span>
-          	 	<span class="icon-bar"></span>
-          	</button>
-	      	<a class="navbar-brand" href="http://www.vivian.tk">
-	        	<img alt="Logo" src="http://www.vivian.tk/favicon-32x32.png">
-	      	</a>
-    	</div>
-    	<div class="collapse navbar-collapse" id="navbar">
-			<ul class="nav navbar-nav">
-				<li><a href="about">About</a></li>
-				<li><a href="projects">Projects</a></li>
-				<li><a href="notes">Class Notes</a></li>
-			</ul>
-		</div>
-	</div>
-</nav>
-<body>
-	<div id="nav-container"></div>
-    <div class="container">
-    	<div class="jumbotron">
-        <div class="container">
-    		  <h2>Vivian Fang. 18. EECS Freshman @ <a href="http://www.eecs.berkeley.edu/" target="_blank">UC Berkeley</a>.</h2>
-        </div>
-    	</div>
-    	<div class="row" align="center">
-	    	<a href="projects" class="btn btn-primary btn-outline btn-lg"><i class="fa fa-folder-open"></i> Projects</button></a>
-	    	
-	    	<button class="btn btn-primary btn-outline btn-lg" data-toggle="collapse" data-target="#resume" aria-expanded="false" aria-controls="resume"><i class="fa fa-file"></i> Resume</button>
-	    	
-	    	<a href="https://github.com/secant" target="blank" class="btn btn-primary btn-outline btn-lg"><i class="fa fa-github-alt"></i> GitHub</a>
-	    	
-	    	<a href="https://www.linkedin.com/in/fangvivian" target="blank" class="btn btn-primary btn-outline btn-lg"><i class="fa fa-linkedin"></i> LinkedIn</a>
-	    	
-	    	<button type="button" id="email" class="btn btn-primary btn-outline btn-lg" data-toggle="popover" data-content=""><i class="fa fa-envelope"></i> Email</button>
-	    </div>
-	    <br>
-	    <div class="row" align="center">
-	    	<div class="collapse" id="resume">
-					 <div class="row">
-					 	<div class="col-lg-1"></div>
-					 	<div class="col-lg-9">
-							<iframe src="http://docs.google.com/gview?url=http://www.vivian.tk/img/VivianFangResume.pdf&embedded=true" style="width:100%; height:80vh;" frameborder="0"></iframe>
-						</div>
-						<div class="col-lg-2" align="left">
-							<a target="_blank" href="http://www.vivian.tk/img/VivianFangResume.pdf"><button type="button" class="btn btn-primary btn-outline"><i class="fa fa-download"></i> Download</button></a>
-						</div>
-					</div>
-				</div>
-	    </div>
-    </div>
-</body>
-<div class="se-pre-con">
-  <br><br><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div>
-</div>
-<div id="footer-container">
-</div>
-<script type="text/javascript">
-	// Loader
-	// Wait for window load
-  $(window).load(function() {
-    // Animate loader off screen
-    $(".se-pre-con").delay(300).fadeOut(350);
-    $('[data-toggle="popover"]').popover()
-  });
-  
-  // Email (Spam Prevention)
-  var username = "v.fang";
-	var hostname = "berkeley.edu";
-	var linktext = username + "@" + hostname;
-	document.getElementById('email').setAttribute("data-content", linktext);
-</script>
+---
+layout: default
+---
 
-<!-- Tracking -->
-<script type="text/javascript">
-	var sc_project=10731622; 
-	var sc_invisible=1; 
-	var sc_security="3c6f4820"; 
-	var scJsHost = (("https:" == document.location.protocol) ?
-	"https://secure." : "http://www.");
-	document.write("<sc"+"ript type='text/javascript' src='" +
-	scJsHost+
-	"statcounter.com/counter/counter.js'></"+"script>");
+<div class="home">
+  <div id="intro-box" class="text-box">
+    <h2 style="margin-bottom: 5px">Vivian Fang &#x25A0; <span id="email"></span></h2>
+    <div class="inside">
+      <table>
+        <tr>
+          <td id="icons"><i class="fa fa-graduation-cap"></i></td>
+          <td id="desc">
+            <span class="important">University of California, Berkeley</span><br>
+            Electrical Engineering & Computer Science, 2019
+          </td>
+        </tr>
+        <tr>
+          <td id="icons"><i class="fa fa-paperclip"></i></td>
+          <td id="desc">
+            <span class="important">Undergraduate Student Instructor for <a href="cs61a">CS 61A</a>
+          </td>
+        </tr>
+        <tr>
+          <td id="icons"><i class="fa fa-search"></i></td>
+          <td id="desc">
+            <span class="important">Undergraduate Researcher @ <a href="https://netsys.cs.berkeley.edu/" target="_blank">NetSys</a> and <a href="https://bids.berkeley.edu/" target="_blank">BIDS</a></span>
+          </td>
+        </tr>
+        <tr>
+          <td id="icons"><i class="fa fa-heart"></i></td>
+          <td id="desc">
+            <span class="important">Likes</span> abstraction, potatoes, cooking, and msg
+          </td>
+        </tr>
+      </table> 
+    </div>
+    <hr><br>
+    <div class="inside no-padding" align="center">
+      &#x25A0; <a id="resume-trigger" href="#">Resume</a> &#x25A0; <a id="advice-trigger" href="#">Advice</a> &#x25A0; <a target= "_blank" href="http://github.com/secant"><i class="fa fa-github-alt"></i></a> &#x25A0; <a target= "_blank" href="https://www.linkedin.com/in/fangvivian"><i class="fa fa-linkedin"></i></a> &#x25A0;
+    </div>
+    <br><hr>
+    <br>
+    <div id="resume" class="text-box" style="display: none;">
+    <iframe src="http://docs.google.com/gview?url=http://www.vivian.tk/img/VivianFangResume.pdf&embedded=true" style="width:100%; height:80vh;" frameborder="0"></iframe>
+    </div>
+    <div id="advice" style="display: none">
+    {% highlight python %}
+      def advice():
+        success = ' :)' # be happy!
+        a = success
+        x = 'how* and'.split('*')
+        y = ' work* to* fun!'.split('*')
+        z = ' be* have* hard'.split('*')
+        a = x[0] + y[1] + z[0] + success + success[1] + y[0] \
+            + z[2] + x[1] + z[1] + y[2]
+        return a{% endhighlight %}
+    </div>
+  </div>
+  <br>
+</div>
+<script>
+
+  // Email (Spam Prevention)
+    var username = "v.fang";
+    var hostname = "berkeley.edu";
+    var linktext = username + "@" + hostname;
+    document.getElementById('email').innerHTML = '<a href="mailto:' + linktext + '">' + linktext + '</a>';
+
+  function closeAll() {
+    $('#advice').slideUp(200);
+    $('#resume').slideUp(200);
+  }
+
+  $('#advice-trigger').click(function(e) {
+    if ($('#advice').is(":visible")) {
+      $('#advice').slideUp(200);
+    } else {
+      closeAll();
+      $('#advice').slideDown(200);
+    }
+  } );
+
+
+  $('#resume-trigger').click(function(e) {
+    if ($('#resume').is(":visible")) {
+      $('#resume').slideUp(200);
+    } else {
+      closeAll();
+      $('#resume').slideDown(200);
+    }
+  } );
 </script>
-<noscript><div class="statcounter"><a title="web stats"
-href="http://statcounter.com/free-web-stats/"
-target="_blank"><img class="statcounter"
-src="http://c.statcounter.com/10731622/0/3c6f4820/1/"
-alt="web stats"></a></div></noscript>
