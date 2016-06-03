@@ -37,7 +37,8 @@ Build the array of classes.
       {% assign clean_name_no_space = name | replace: "-", "" %}
       <div id="{{ clean_name_no_space }}" style="display: none;">
         <h2 style="margin-bottom: 0px">{{ clean_name | upcase }}</h2>
-        {% for file in notes.files %}
+        {% assign files = notes.files | sort: "path" %}
+        {% for file in files %}
           {% if file.path contains name %}
             <a class="fancybox" data-fancybox-group="{{ clean_name }}" href="{{ file.path | remove: "_"  | prepend: "/content"}}">{{ file.path | remove: "/_notes/" | split: "/" | last | remove: ".pdf" }}</a> &#x25A0;
           {% endif %}
