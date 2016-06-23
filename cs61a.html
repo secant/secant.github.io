@@ -1,0 +1,7 @@
+---
+layout: default
+---
+<div class="text-box">
+  {% capture my-include %}{% include cs61a.md %}{% endcapture %}
+  {{ my-include | markdownify }}
+</div>
