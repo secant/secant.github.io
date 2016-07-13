@@ -2,6 +2,15 @@
 layout: default
 ---
 <div class="text-box">
+  {% capture toc %}{% include _61a/toc.md %}{% endcapture %}
+  {{ toc | markdownify }}
+  <hr><br>
   {% capture 2-3-q-1 %}{% include _61a/2.3Q1.md %}{% endcapture %}
   {{ 2-3-q-1 | markdownify }}
+
+  {% capture 2-3-q-2 %}{% include _61a/2.3Q2.md %}{% endcapture %}
+  {{ 2-3-q-2 | markdownify }}
+
+  {% capture 2-3-q-3 %}{% include _61a/2.3Q3.md %}{% endcapture %}
+  {{ 2-3-q-3 | markdownify }}
 </div>
