@@ -8,5 +8,7 @@ T, Th (Lab @ 271 Soda) • W, F (Discussion @ 310 Soda)
 
 ## Tips
 * (more will be added as we progress through this summer)
+* When in doubt (especially on a WWPD question), draw an environment diagram.
+* `python3 -i <file>` opens a session in python, with the code in `file` loaded.
 * When you're taking any kind of test (exam or quiz) **do not panic**!
 * Leave me anonymous feedback [here](https://docs.google.com/forms/d/1j2WmiTn4cWmJqtrFQk5J4NOGAbJINWJpAJDQ3TDtucI/viewform){:target="_blank"}!
