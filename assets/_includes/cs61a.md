@@ -3,6 +3,9 @@
 
 T, Th (Lab @ 271 Soda) • W, F (Discussion @ 310 Soda)
 
+## Announcements
+Please fill out this [survey](http://goo.gl/forms/u76rseOQKyzagBrt1). This is optional, but your feedback will really help me! The survey will close on Friday.
+
 ## Guides
 [Discussion 06](/assets/61a/disc06)
 
