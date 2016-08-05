@@ -2,20 +2,14 @@
 layout: default
 ---
 <div class="text-box">
-  {% capture toc %}{% include _61a/_disc06/toc.md %}{% endcapture %}
+  {% capture toc %}{% include _61a/_disc10/toc.md %}{% endcapture %}
   {{ toc | markdownify }}
   <hr><br>
-  {% capture 2-3-q-1 %}{% include _61a/_disc06/2.3Q1.md %}{% endcapture %}
-  {{ 2-3-q-1 | markdownify }}
+  {% capture 3-2-q-2 %}{% include _61a/_disc10/3.2Q2.md %}{% endcapture %}
+  {{ 3-2-q-2 | markdownify }}
   <hr><br>
-  {% capture 2-3-q-2 %}{% include _61a/_disc06/2.3Q2.md %}{% endcapture %}
-  {{ 2-3-q-2 | markdownify }}
-  <hr><br>
-  {% capture 2-3-q-3 %}{% include _61a/_disc06/2.3Q3.md %}{% endcapture %}
-  {{ 2-3-q-3 | markdownify }}
-  <hr><br>
-  {% capture 2-4-q-1 %}{% include _61a/_disc06/2.4Q1.md %}{% endcapture %}
-  {{ 2-4-q-1 | markdownify }}
+  {% capture 4-q-2 %}{% include _61a/_disc10/4Q2.md %}{% endcapture %}
+  {{ 4-q-2 | markdownify }}
 </div>
 
 <a href="#" class="back-to-top" style="display: inline;">
@@ -29,14 +23,14 @@ layout: default
     margin: 0;
     position: fixed;
     bottom: 0;
-    right: 20%;
+    right: 5%;
     width: 70px;
     height: 70px;
     z-index: 100;
     display: none;
     text-decoration: none;
-    color: #002b36 !important;
-    background-color: transparent;
+    color: rgba(0, 17, 21, 0.5) !important;
+    background-color: rgba(256, 256, 256, 0.5);
     text-align: center;
   }
 
