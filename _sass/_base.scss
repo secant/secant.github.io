@@ -14,14 +14,20 @@ html {
 }
 
 .text-box {
-  font-family: 'Source Code Pro', serif;
+  font-family: 'Inconsolata', serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   background-color: #002b36; 
   color: #DDECEC;
   padding: 10px 20px;
+}
+
+.text-box h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .text-box .inside {
@@ -194,9 +200,9 @@ blockquote {
  */
 pre,
 code {
-    font-family: 'Source Code Pro', serif;
+    font-family: 'Inconsolata', serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 18px;
     border: 1px solid #f5f5f8;
     border-radius: 3px;
     color: #DDECEC;

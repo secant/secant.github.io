@@ -1,7 +1,38 @@
 ---
-layout: default
+layout: cs61a
 ---
 <div class="text-box">
-  {% capture my-include %}{% include cs61a.md %}{% endcapture %}
+  {% capture my-include %}{% include 61a/fa16/cs61a.md %}{% endcapture %}
   {{ my-include | markdownify }}
 </div>
+
+<div id="appt" style="display:none; width:800px; margin-left:auto; margin-right:auto;">
+  If you want to talk about anything (future, research, CS 61A, support), feel free to shoot me <a href="mailto:v.fang+61a@berkeley.edu">an email</a> with a time that works for you and me.<br>
+  <iframe src="https://calendar.google.com/calendar/embed?title=Vivian%27s%20Schedule&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=vivian98.fang%40gmail.com&amp;color=%232952A3&amp;src=vgcbh5aecr5r15pje810n9l6p4%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<script src="/css/fancybox/jquery.fancybox.js"></script>
+<link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<script type="text/javascript">
+// $(function() {
+//     $("#appointment").fancybox({
+//         'content' : $("#appt").html(),
+//         'openEffect' : 'none',
+//         'closeEffect' : 'elastic'
+//     });
+// });
+
+$("#appointment").fancybox({
+    'onStart': function() {$("#appt").css("display","block");},            
+    'onClosed': function() {$("#appt").css("display","none"); },
+    'scrolling'   : 'no',
+    'openEffect' : 'none',
+    'closeEffect' : 'elastic',
+    helpers : {
+        overlay : {
+            locked : false,
+            css: {'opacity': '0.0'},
+        }
+    },
+});
+</script>
