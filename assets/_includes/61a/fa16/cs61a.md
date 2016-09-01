@@ -7,6 +7,8 @@ Tuesday Lab @ 273 Soda • Thursday Discussion @ 289 Cory
 Office Hour @ 237 Cory on Thursdays 6:30-7:30 p.m. • <a href="#appt" id="appointment">Wanna Talk?</a>
 
 ## Announcements
+[09/01/16] Attendance form is here: [bit.ly/108magic](http://bit.ly/108magic). I'll be counting how many people there are during class! <i class="em em-eyes"></i>
+
 [08/23/16] If you attend my section (even if you aren't registered), please fill
 out [this form](https://docs.google.com/forms/d/e/1FAIpQLSe8iTZObaLCmaB7Xd4JdUK8YPLnJpVkKY1nPgP1SnY5t1Hi2g/viewform).
 
