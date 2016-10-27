@@ -17,7 +17,7 @@ out [this form](https://docs.google.com/forms/d/e/1FAIpQLSe8iTZObaLCmaB7Xd4JdUK8
 ## Guides
 
 ## Slides
-[Discussion 00](https://docs.google.com/presentation/d/1jOAfYvEztmnq1oAVojf-QnzuK7zr_1T3k22Be5xa3lI/present?slide=id.p){:target="_blank"} • [Discussion 03](https://docs.google.com/presentation/d/1QwGW9wT4VEHVinpvj8zI_uxfaYZMYVNe6KOSgWXdfMU/present?slide=id.p){:target="_blank"} • [Midterm Motivation](https://docs.google.com/presentation/d/1ZPdJylf6lRqu-w2fd-k_qy5byN504ppk553TiGq6Wpc/present?slide=id.p){:target="_blank"} • [Discussion 05](https://docs.google.com/presentation/d/1tCZp6WwscIXqYFCBFvSRR3IYff9VztpTgLz2l7VIU68/present?slide=id.p){:target="_blank"}
+[Discussion 00](https://docs.google.com/presentation/d/1jOAfYvEztmnq1oAVojf-QnzuK7zr_1T3k22Be5xa3lI/present?slide=id.p){:target="_blank"} • [Discussion 03](https://docs.google.com/presentation/d/1QwGW9wT4VEHVinpvj8zI_uxfaYZMYVNe6KOSgWXdfMU/present?slide=id.p){:target="_blank"} • [Midterm Motivation](https://docs.google.com/presentation/d/1ZPdJylf6lRqu-w2fd-k_qy5byN504ppk553TiGq6Wpc/present?slide=id.p){:target="_blank"} • [Discussion 05](https://docs.google.com/presentation/d/1tCZp6WwscIXqYFCBFvSRR3IYff9VztpTgLz2l7VIU68/present?slide=id.p){:target="_blank"} • [Discussion 07](https://docs.google.com/presentation/d/1YlG5kiqLHRWF2Cxj4HbEd_zuqs5iuQs13JfDajKxMdM/present?slide=id.p){:target="_blank"}
 
 ## Tips
 * (more will be added as we progress through this semester)
