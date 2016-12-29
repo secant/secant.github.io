@@ -1,15 +1,78 @@
 ---
-layout: default
+layout: default_no_nav
 ---
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+<div align="right">
+  <a href="/blog">Blog</a> x <a href="/">vivian.tk</a>
+</div>
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    {% if page.date %}<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>{% endif %}
   </header>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
+    <a href="#" class="back-to-top" style="display: inline;">
+      <i class="fa fa-arrow-circle-up"></i>
+    </a>
   </div>
-
 </article>
+{% if page.comments %}
+<br>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div id="disqus_thread"></div>
+  <script>
+    /*
+     var disqus_config = function () {
+     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+     };
+     */
+      (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = '//vivian-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</article>
+{% endif %}
+<style>
+  .back-to-top {
+    cursor: hand;
+    background: none;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    width: 70px;
+    height: 70px;
+    z-index: 100;
+    display: none;
+    text-decoration: none;
+    color: rgba(0, 17, 21, 0.5) !important;
+    background-color: rgba(256, 256, 256, 0.5);
+    text-align: center;
+  }
+
+  .back-to-top i {
+    font-size: 60px;
+  } 
+</style>
+
+<script>
+$(document).ready(function() {
+  var duration = 200;
+
+  $('.back-to-top').click(function(event) {
+    event.preventDefault();
+    $('html, body').animate({scrollTop: 0}, duration);
+    return false;
+  })
+});
+</script>
