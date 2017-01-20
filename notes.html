@@ -23,6 +23,8 @@ Build the array of classes.
 <div class="text-box">
   <ul>
     <h3 style="margin-bottom: 0px">
+      <li><a href="#" click="cs170" class="click">CS 170 (SP 17 | GARG & RAGHAVENDRA)</a></li>
+      <li><a href="#" click="ee16b" class="click">EE 16B (SP 17 | MAHARBIZ & ARCAK)</a></li>
       <li><a href="#" click="cs70" class="click">CS 70 (FA 16 | SANJIT & WALRAND)</a></li>
       <li><a href="#" click="ee16a" class="click">EE 16A (SP 16 | AYAZIFAR & ALON)</a></li>
       <li><a href="#" click="math54" class="click">MATH 54 (SP 16 | YUAN)</a></li>
@@ -39,11 +41,8 @@ Build the array of classes.
       <div id="{{ clean_name_no_space }}" style="display: none;">
         <h2 style="margin-bottom: 0px">{{ clean_name | upcase }}</h2>
         {% assign files = notes.files | sort: "path" %}
-        {% for file in files %}
-          {% if file.path contains name %}
-            <a class="fancybox" data-fancybox-group="{{ clean_name }}" href="{{ file.path | remove: "_"  | prepend: "/content"}}">{{ file.path | remove: "/_notes/" | split: "/" | last | remove: ".pdf" }}</a> &#x25A0;
-          {% endif %}
-        {% endfor %}
+        {% for file in files %}{% if file.path contains name %}
+            <a class="fancybox" data-fancybox-group="{{ clean_name }}" href="http://docs.google.com/gview?url=http://vivian.tk{{ file.path | remove: "_"  | prepend: "/content"}}&embedded=true">{{ file.path | remove: "/_notes/" | split: "/" | last | remove: ".pdf" }}</a> &#x25A0;{% endif %}{% endfor %}
         <br><br><hr><br>
       </div>
     {% endunless %}
@@ -90,6 +89,8 @@ Build the array of classes.
   });
 
   function closeAll() {
+    $('#cs170').hide(200);
+    $('#ee16b').hide(200);
     $('#cs70').hide(200);
     $('#ee16a').hide(200);
     $('#gws100ac').hide(200);
