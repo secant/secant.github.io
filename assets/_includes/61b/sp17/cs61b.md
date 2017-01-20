@@ -6,6 +6,7 @@ F 9-11 a.m. Lab @ 271 Soda • T 5-6 p.m. Discussion @ 234 Dwinelle
 Office Hour @ 109 Morgan on M 4-5 p.m. and T 11-12 p.m. • <a href="#appt" id="appointment">Wanna Talk?</a>
 
 ## Announcements
+[01/20/17] Hi lab!
 
 [01/17/17] Fill out this form so I can get to know you better!
 [bit.ly/29info](http://bit.ly/29info)
