@@ -13,7 +13,7 @@ includes_dir: /assets/_includes
 # Site settings
 title: vivian fang
 email: v.fang@berkeley.edu
-description: EECS student @ UC Berkeley and a CS 61A UGSI.
+description: EECS student @ UC Berkeley and a CS 61B UGSI.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://vivian.tk" # the base hostname & protocol for your site
 github_username:  secant
