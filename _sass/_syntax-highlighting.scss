@@ -16,8 +16,8 @@ $green:    #3AE25C; //  operators, other keywords
 .highlight {
 
     span {
-        font-weight: 400;
-        font-family: 'Inconsolata', serif;
+        font-weight: 300;
+        font-family: $base-code-family;
     }
 
     .c { color: $base01; } /* Comment */

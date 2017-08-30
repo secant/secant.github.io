@@ -17,13 +17,12 @@ html {
 
 .important {
   color: #6DC2FD;
-  font-weight: 500;
 }
 
 .text-box {
-  font-family: 'Inconsolata', serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-family: $base-font-family, sans-serif;
+  font-weight: $base-font-weight;
+  font-size: $base-font-size;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   background-color: #002b36; 
@@ -176,9 +175,9 @@ a {
     }*/
 
     &:hover {
-        color: $text-color;
         /*text-decoration: underline;*/
-        font-weight: 700;
+        font-family: $base-font-family;
+        color: darken($text-color, 25%);
     }
 }
 
@@ -207,9 +206,9 @@ blockquote {
  */
 pre,
 code {
-    font-family: 'Inconsolata', serif;
+    font-family: $base-code-family;
     font-weight: 400;
-    font-size: 18px;
+    font-size: $base-font-size;
     border: 1px solid #f5f5f8;
     border-radius: 3px;
     color: #DDECEC;

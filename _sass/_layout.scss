@@ -16,17 +16,17 @@
 }
 
 .site-title {
-    font-size: 26px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 500;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: right;
-    color: #DDECEC;
-    &:hover {
+    color: #6DC2FD;
+	&:hover {
         color: #DDECEC;
-        font-weight: 700;
     }
+	position: relative;
 }
 
 .site-nav {
@@ -41,10 +41,25 @@
         /*color: $text-color;*/
         color: #DDECEC;
         line-height: $base-line-height;
+        position: relative;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
-            margin-right: 20px;
+            margin-right: 10px;
+        }
+
+        &:hover:before {
+            position: absolute;
+            content: "\002a";
+            left: 102%;
+            top: 0%;
+            font-weight: $base-font-weight;
+            font-size: 17px;
+        }
+
+        &:hover {
+            color: #DDECEC;
+            font-weight: $base-font-weight;
         }
     }
 
