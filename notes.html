@@ -42,7 +42,8 @@ Build the array of classes.
         <h2 style="margin-bottom: 0px">{{ clean_name | upcase }}</h2>
         {% assign files = notes.files | sort: "path" %}
         {% for file in files %}{% if file.path contains name %}
-            <a class="fancybox" data-fancybox-group="{{ clean_name }}" href="http://docs.google.com/gview?url=http://vivian.tk{{ file.path | remove: "_"  | prepend: "/content"}}&embedded=true">{{ file.path | remove: "/_notes/" | split: "/" | last | remove: ".pdf" }}</a> &#x25A0;{% endif %}{% endfor %}
+        <span style="white-space: nowrap;">
+          <a class="fancybox" data-fancybox-group="{{ clean_name }}" href="http://docs.google.com/gview?url=http://vivi.sh{{ file.path | remove: "_"  | prepend: "/content"}}&embedded=true">{{ file.path | remove: "/_notes/" | split: "/" | last | remove: ".pdf" }}</a> &#x25A0;</span>{% endif %}{% endfor %}
         <br><br><hr><br>
       </div>
     {% endunless %}
