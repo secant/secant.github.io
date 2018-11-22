@@ -5,21 +5,21 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Folder Moving
-plugins_dir:  /assets/_plugins
-layouts_dir:  /assets/_layouts
-includes_dir: /assets/_includes
-
 # Site settings
 title: vivian fang
-email: v.fang@berkeley.edu
-description: EECS student @ UC Berkeley and a CS 61B UGSI.
+email: vivian@eecs.berkeley.edu
+description: EECS student @ UC Berkeley.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://vivi.sh" # the base hostname & protocol for your site
 github_username:  vivi
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+highlighter: rouge
 
 collections:
   notes:
