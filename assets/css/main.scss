@@ -2,10 +2,12 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,600');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300');
 
 // Our variables
-$base-font-family: "Helvetica", Helvetica, sans-serif;
+$base-font-family: "IBM Plex Sans", sans-serif;
 $base-code-family: "Roboto Mono", monospace;
 $base-font-size:   16px;
 $base-font-weight: 300;
@@ -43,12 +45,8 @@ $on-laptop:        800px;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
-        "layout",
-        "syntax-highlighting"
-        //"solarized-light"
+        "layout"
 ;

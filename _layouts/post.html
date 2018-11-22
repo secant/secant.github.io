@@ -1,0 +1,33 @@
+---
+extra_css:
+  - /assets/css/autumn.css
+  - https://afeld.github.io/emoji-css/emoji.css
+extra_js:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
+  - /assets/js/top.js
+---
+<html>
+  {% include head.html %}
+  <body>
+    <div class="page-content">
+      <div class="wrapper">
+        <div align="right">
+          <a href="/blog">Blog</a> x <a href="/">vivi.sh</a>
+        </div>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+            {% if page.date %}<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>{% endif %}
+          </header>
+
+          <div class="post-content" itemprop="articleBody">
+            {{ content }}
+            <a href="#" class="back-to-top">
+              back up
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

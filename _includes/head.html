@@ -1,0 +1,31 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/assets/icon/manifest.json">
+  <link rel="mask-icon" href="/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/assets/icon/favicon.ico">
+  {%- for css_name in layout.extra_css -%}
+  <link rel="stylesheet" href="{{ css_name }}">
+  {%- endfor -%}
+  <meta name="msapplication-config" content="/assets/icon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  {%- if page.fancybox -%}
+  <link rel="stylesheet" href="/assets/fancybox/jquery.fancybox.css" />
+  <script src="/assets/fancybox/jquery.fancybox.js"></script>
+  {%- endif -%}
+  {%- for js_name in layout.extra_js -%}
+  <script type="text/javascript" async src="{{ js_name }}"></script>
+  {%- endfor -%}
+</head>
