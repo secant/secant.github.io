@@ -1,5 +1,6 @@
 ---
 layout: default
+fancybox: true
 ---
 {% for note in site.collections %}
   {% if note.label == "notes" %}
@@ -14,18 +15,17 @@ Build the array of classes.
 {% assign names_str = "" %}
 {% for file in notes.files %}
   {% assign names_arr = names_str | split: delimiter %}
-  {% assign name = file.path | remove: "/_notes/" | split: "/" | first %}
+  {% assign name = file.path | remove: "_notes/" | split: "/" | first %}
   {% unless names_arr contains name %}
       {% assign names_str = names_str | append: delimiter | append: name %}
   {% endunless %}
 {% endfor %}
 
 <div class="text-box">
+  Notes find their way here!
+  <br>
   <ul>
     <h3 style="margin-bottom: 0px">
-      <li><a href="#" click="cs170" class="click">CS 170 (SP 17 | GARG & RAGHAVENDRA)</a></li>
-      <li><a href="#" click="ee16b" class="click">EE 16B (SP 17 | MAHARBIZ & ARCAK)</a></li>
-      <li><a href="#" click="cs70" class="click">CS 70 (FA 16 | SANJIT & WALRAND)</a></li>
       <li><a href="#" click="ee16a" class="click">EE 16A (SP 16 | AYAZIFAR & ALON)</a></li>
       <li><a href="#" click="math54" class="click">MATH 54 (SP 16 | YUAN)</a></li>
       <li><a href="#" click="gws100ac" class="click">GWS 100AC (SP 16 | BARNES)</a></li>
@@ -38,19 +38,18 @@ Build the array of classes.
     {% unless name == "" %}
       {% assign clean_name = name | replace: "-", " " %}
       {% assign clean_name_no_space = name | replace: "-", "" %}
-      <div id="{{ clean_name_no_space }}" style="display: none;">
+      <div class="note" id="{{ clean_name_no_space }}" style="display: none;">
         <h2 style="margin-bottom: 0px">{{ clean_name | upcase }}</h2>
         {% assign files = notes.files | sort: "path" %}
         {% for file in files %}{% if file.path contains name %}
+        {% assign link = file.path | remove: "_" | prepend: "/content/" %}
         <span style="white-space: nowrap;">
-          <a class="fancybox" data-fancybox-group="{{ clean_name }}" href="http://docs.google.com/gview?url=http://vivi.sh{{ file.path | remove: "_"  | prepend: "/content"}}&embedded=true">{{ file.path | remove: "/_notes/" | split: "/" | last | remove: ".pdf" }}</a> &#x25A0;</span>{% endif %}{% endfor %}
+          <a class="fancybox" data-fancybox-group="{{ clean_name }}" href="{{ link }}">{{ file.path | remove: "_notes/" | split: "/" | last | remove: ".pdf" }}</a> &#x25A0;</span>{% endif %}{% endfor %}
         <br><br><hr><br>
       </div>
     {% endunless %}
   {% endfor %}
 </div>
-<script src="/css/fancybox/jquery.fancybox.js"></script>
-<link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
 <script type="text/javascript">
   // Fancybox
   $(".fancybox").fancybox({
@@ -90,14 +89,7 @@ Build the array of classes.
   });
 
   function closeAll() {
-    $('#cs170').hide(200);
-    $('#ee16b').hide(200);
-    $('#cs70').hide(200);
-    $('#ee16a').hide(200);
-    $('#gws100ac').hide(200);
-    $('#math53').hide(200);
-    $('#math54').hide(200);
-    $('#physics7b').hide(200);
+    $('.note').css("display", "none");
   }
 
   $(".click").click(function ()
@@ -105,7 +97,7 @@ Build the array of classes.
       var className = "#" + $(this).attr("click");
       if (!$(className).is(":visible")) {
         closeAll();
-        $(className).show(300);
+        $(className).css("display", "block");
       }
     });
 </script>

@@ -21,12 +21,28 @@
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: right;
-    color: #6DC2FD;
-	&:hover {
+    float: left;
+    color: #DDECEC !important;
+	position: relative;
+    &:hover:after {
+        position: absolute;
+        content: "\002a";
+        left: 102%;
+        top: 0%;
+        font-weight: 500;
+        font-size: 22px;
+    }
+    &:hover {
         color: #DDECEC;
     }
-	position: relative;
+    @include media-query($on-palm) {
+        &:hover:after {
+            content: unset;
+        }
+        line-height: 1.5;
+        float: right;
+        padding: 0 10px;
+    }
 }
 
 .site-nav {
@@ -40,19 +56,17 @@
     .page-link {
         /*color: $text-color;*/
         color: #DDECEC;
-        line-height: $base-line-height;
         position: relative;
 
         // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 10px;
+        &:not(:first-child) {
+            margin-left: 10px;
         }
 
         &:hover:before {
             position: absolute;
             content: "\002a";
-            left: 102%;
-            top: 0%;
+            right: 105%;
             font-weight: $base-font-weight;
             font-size: 17px;
         }
@@ -71,6 +85,7 @@
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
+        line-height: 1.5;
 
         .menu-icon {
             display: block;
@@ -108,6 +123,11 @@
             &:not(:last-child) {
                 margin-right: 0;
             }
+
+            &:hover:before {
+                content: unset;
+            }
+
             margin-left: 20px;
         }
     }
@@ -260,4 +280,10 @@
             font-size: 18px;
         }
     }
+}
+
+.MathJax_CHTML {
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid !important;
+    color: #FFF !important;
 }

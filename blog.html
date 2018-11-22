@@ -2,20 +2,50 @@
 layout: post
 title:  "Index"
 ---
+<h3>Technical</h3>
+<ul>
+  {% for post in site.categories.tech %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%b %-d, %Y"}}</a>
+  </li>
+  {% endfor %}
+</ul>
+
 <h3>School</h3>
-	<ul>
-	  {% for post in site.categories.school %}
-	    <li>
-	      <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%b %-d, %Y"}}</a>
-	    </li>
-	  {% endfor %}
-	</ul>
+<ul>
+  {% for post in site.categories.school %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%b %-d, %Y"}}</a>
+  </li>
+  {% endfor %}
+</ul>
 
 <h3>Food</h3>
-	<ul>
-	  {% for post in site.categories.food %}
-	    <li>
-	      <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%b %-d, %Y"}}</a>
-	    </li>
-	  {% endfor %}
-	</ul>
+<ul>
+  {% for post in site.categories.food %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%b %-d, %Y"}}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+<h3>Misc.</h3>
+<ul>
+  {% for post in site.categories.misc %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%b %-d, %Y"}}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+<div align="right">
+<em>Email me questions or comments at <span id="email"></span>!</em>
+</div>
+
+<script>
+  // Email (Spam Prevention)
+  var username = "blog";
+  var hostname = "vivi.sh";
+  var linktext = username + "@" + hostname;
+  document.getElementById('email').innerHTML = '<a href="mailto:' + linktext + '">' + linktext + '</a>';
+</script>

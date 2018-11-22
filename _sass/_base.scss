@@ -1,77 +1,81 @@
 /**
  * Force the pesky scrollbar
  */
-html { 
-  overflow-y: scroll; 
+body {
+    overflow-y: scroll;
 }
 
-/** 
+/**
  * Some custom text-boxes
  */
 
 .post {
-  // border: 1px solid #002b36;
-  // border-radius: 3px;
-  padding: 5px;
+    // border: 1px solid #002b36;
+    // border-radius: 3px;
+    padding: 5px;
 }
 
 .important {
-  color: #6DC2FD;
+    color: #6DC2FD;
 }
 
 .text-box {
-  font-family: $base-font-family, sans-serif;
-  font-weight: $base-font-weight;
-  font-size: $base-font-size;
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #002b36; 
-  color: #DDECEC;
-  padding: 10px 20px;
+    font-family: $base-font-family, sans-serif;
+    font-weight: $base-font-weight;
+    font-size: $base-font-size;
+    background-color: #002b36;
+    color: #DDECEC;
+    padding: 10px 30px;
 }
 
 .text-box h1 {
-  font-size: 2em;
-  font-weight: 700;
-  margin-bottom: 5px;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
 
 .text-box .inside {
-  padding-left: 20px;
-}
-
-.inside.no-padding {
-  padding-left: 0px;
+    padding-left: 20px;
 }
 
 .text-box a {
-  color: #69FFF4 !important;
+    color: #69FFF4;
+    &:hover, &:active {
+        color: #69FFF4;
+        text-decoration: underline;
+    }
 }
-.text-box a:active, .text-box a:hover {
-  color: #DDECEC !important;
+
+#intro-box ul {
+    list-style-type: square;
+    li {
+        padding-bottom: 10px;
+    }
 }
 
 .fa-github {
-  color: #69FFF4;
+    color: #69FFF4;
 }
 
 .fa-github:active, .fa-github:hover {
-  color: #DDECEC !important;
+    color: #DDECEC !important;
 }
 
 #icons {
-  vertical-align: text-top;
-  text-align: right;
-  padding-right: 10px;
+    vertical-align: text-top;
+    text-align: right;
+    padding-right: 10px;
+    color: #6DC2FD;
+    opacity: 0.6;
 }
 
 #desc {
-  padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 #email {
-  font-size: 15px;
-  vertical-align: middle;
+    font-size: 16px;
+    vertical-align: middle;
 }
 
 /**
@@ -148,7 +152,7 @@ ul, ol {
 li {
     > ul,
     > ol {
-         margin-bottom: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -174,11 +178,11 @@ a {
         color: darken($brand-color, 15%);
     }*/
 
-    &:hover {
-        /*text-decoration: underline;*/
-        font-family: $base-font-family;
-        color: darken($text-color, 25%);
-    }
+&:hover {
+    /*text-decoration: underline;*/
+    font-family: $base-font-family;
+    color: darken($text-color, 25%);
+}
 }
 
 
@@ -190,9 +194,7 @@ blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
+    font-size: 16px;
 
     > :last-child {
         margin-bottom: 0;
@@ -204,15 +206,23 @@ blockquote {
 /**
  * Code formatting
  */
-pre,
-code {
-    font-family: $base-code-family;
-    font-weight: 400;
-    font-size: $base-font-size;
+%code-box {
     border: 1px solid #f5f5f8;
     border-radius: 3px;
     color: #DDECEC;
     background-color: #151427;
+}
+
+.code {
+    @extend %code-box;
+}
+
+pre,
+code, {
+    @extend %code-box;
+    font-family: $base-code-family;
+    font-weight: 400;
+    font-size: $base-font-size - 2;
 }
 
 code {
@@ -286,4 +296,44 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+kbd {
+    -moz-border-radius:3px;
+    -moz-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    -webkit-border-radius:3px;
+    -webkit-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    background-color:#f7f7f7;
+    border:1px solid #ccc;
+    border-radius:3px;
+    box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    color:#333;
+    display:inline-block;
+    font-family: $base-font-family;
+    font-size: $base-font-size * 0.8;
+    line-height:1.4;
+    margin:0 .1em;
+    padding:.1em .6em;
+    text-shadow:0 1px 0 #fff;
+}
+
+.back-to-top {
+    cursor: hand;
+    background: none;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    width: 70px;
+    height: 70px;
+    z-index: 100;
+    display: none;
+    text-decoration: none;
+    color: rgba(0, 17, 21, 0.5) !important;
+    background-color: rgba(256, 256, 256, 0.5);
+    text-align: center;
+}
+
+.back-to-top i {
+    font-size: 60px;
 }

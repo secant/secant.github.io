@@ -3,46 +3,44 @@ layout: default
 ---
 <div class="home">
   <div id="intro-box" class="text-box">
-    <h2 style="margin-bottom: 5px">Vivian Fang &#x25A0; <span id="email"></span></h2>
-    <div class="inside">
-      <table>
-        <tr>
-          <td id="icons"><i class="fa fa-graduation-cap"></i></td>
-          <td id="desc">
-            <span class="important">University of California, Berkeley</span><br>
-            Electrical Engineering & Computer Science, 2019
-          </td>
-        </tr>
-        <tr>
-          <td id="icons"><i class="fa fa-paperclip"></i></td>
-          <td id="desc">
-              <span class="important">Undergraduate Student Instructor for <a href="cs168">CS 168</a></span> (previously <a href="cs61a">CS 61A</a> and <a href="cs61b">CS 61B</a>)
-          </td>
-        </tr>
-        <tr>
-          <td id="icons"><i class="fa fa-search"></i></td>
-          <td id="desc">
-            <span class="important">Undergraduate Researcher @ <a href="https://netsys.cs.berkeley.edu/" target="_blank">NetSys</a></span>
-          </td>
-        </tr>
-        <tr>
-          <td id="icons"><i class="fa fa-heart"></i></td>
-          <td id="desc">
-            <span class="important">Likes</span> abstraction, potatoes, cooking, and msg
-          </td>
-        </tr>
-      </table> 
-    </div>
+    <h2 style="margin-bottom: 5px">Vivian Fang [ <span id="email"></span> ]</h2>
+    <ul>
+      <li>
+        Research assistant in the <a href="https://netsys.cs.berkeley.edu">NetSys Lab</a> working with Scott Shenker and Aurojit Panda on <span class="important">serverless</span> and <span class="important">edge computing</span>. Broadly interested in <span class="important">systems</span> and <span class="important">networking</span>.
+      </li>
+      <li>
+        Graduated from <span class="important">UC Berkeley</span> in 2018.
+        <br>
+        During undergrad, I TA-ed various CS courses (<a href="cs168">CS 168</a>, <a href="cs61b">CS 61B</a>, and <a href="cs61a">CS 61A</a>). You can find my teaching materials for each class by clicking the respective link.
+      </li>
+      <li>
+        I like origami, cats, and <a href="https://bicycal.berkeley.edu">bikes</a>!
+      </li>
+    </ul>
     <hr><br>
-    <div class="inside no-padding" align="center">
-      &#x25A0; <a id="resume-trigger" href="#">Resume</a> &#x25A0; <a id="advice-trigger" href="#">Advice</a> &#x25A0; <a target= "_blank" href="http://github.com/vivi"><i class="fa fa-github-alt"></i></a> &#x25A0; <a target= "_blank" href="https://www.linkedin.com/in/fangvivian"><i class="fa fa-linkedin"></i></a> &#x25A0;
+    <div align="center">
+      <!--
+      &#x25A0; <a class="trigger" click="papers" href="#">Papers</a>
+      -->
+      &#x25A0; <a class="trigger" click="resume" href="#">Resume</a>
+      &#x25A0; <a class="trigger" click="advice" href="#">Advice</a>
+      &#x25A0; <a href="http://github.com/vivi">Github</a>
+      &#x25A0; <a href="http://twitter.com/vivianfxng">Twitter</a>
+      &#x25A0;
     </div>
     <br><hr>
     <br>
-    <div id="resume" class="text-box" style="display: none; text-align: center;">
+    <!--
+    <div class="text-box code toggle" id="papers" class="text-box" style="display: none; margin-bottom: 10px;">
+      <b>Evaluating Software Switches: Hard or Hopeless?</b>
+      Vivian Fang, Tamás Lévai, Sangjin Han, Sylvia Ratnasamy, Barath Raghavan and Justine Sherry.
+      <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2018/EECS-2018-136.html">Technical Report No. UCB/EECS-2018-136</a>.
+    </div>
+    -->
+    <div class="text-box code toggle" id="resume" class="text-box" style="display: none; text-align: center; margin-bottom: 10px;">
       <i class="fa fa-envelope-o"></i> <div id="resume_email"></div>
     </div>
-    <div id="advice" style="display: none">
+    <div class="toggle" id="advice" style="display: none;">
     {% highlight python %}
       def advice():
         success = ' :)' # be happy!
@@ -58,10 +56,9 @@ layout: default
   <br>
 </div>
 <script>
-
   // Email (Spam Prevention)
-  var username = "v.fang";
-  var hostname = "berkeley.edu";
+  var username = "vivian";
+  var hostname = "eecs.berkeley.edu";
   var linktext = username + "@" + hostname;
   document.getElementById('email').innerHTML = '<a href="mailto:' + linktext + '">' + linktext + '</a>';
 
@@ -70,28 +67,16 @@ layout: default
   var linktext = username + "@" + hostname;
   document.getElementById('resume_email').innerHTML = '<a href="mailto:' + linktext + '">' + linktext + '</a>';
 
-  function closeAll() {
-    $('#advice').slideUp(200);
-    $('#resume').slideUp(200);
-  }
-
-  $('#advice-trigger').click(function(e) {
-    if ($('#advice').is(":visible")) {
-      $('#advice').slideUp(200);
+  $('.trigger').click(function() {
+    var target = $("#" + $(this).attr("click"));
+    console.log($(this).attr("click"));
+    console.log(target.hasClass("fadeout"));
+    if (target.is(":visible")) {
+      target.hide();
     } else {
-      closeAll();
-      $('#advice').slideDown(200);
+      $(".toggle").hide();
+      target.show();
     }
-  } );
-
-
-  $('#resume-trigger').click(function(e) {
-    if ($('#resume').is(":visible")) {
-      $('#resume').slideUp(200);
-    } else {
-      closeAll();
-      $('#resume').slideDown(200);
-    }
-  } );
-
+    console.log("click");
+  });
 </script>
