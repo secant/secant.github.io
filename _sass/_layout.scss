@@ -24,7 +24,7 @@
     float: left;
     color: #DDECEC !important;
 	position: relative;
-    &:hover:after {
+    &:hover:after, &:focus:after {
         position: absolute;
         content: "\002a";
         left: 102%;
@@ -32,26 +32,16 @@
         font-weight: 500;
         font-size: 22px;
     }
-    &:hover {
-        color: #DDECEC;
-    }
-    /*
-    @include media-query($on-palm) {
-        &:hover:after {
-            content: unset;
-        }
-        line-height: 1.5;
-        padding: 0 10px;
-    }
-    */
 }
 
 .site-nav {
     margin: 0 auto;
     line-height: 56px;
 
-    .menu-icon {
-        display: none;
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
     }
 
     .page-link {
@@ -65,79 +55,16 @@
             margin-left: 10px;
         }
 
-        &:hover:before {
+        &:hover:before, &:active:before {
             position: absolute;
             content: "\002a";
             right: 105%;
             font-weight: $base-font-weight;
             font-size: 17px;
-        }
-
-        &:hover {
             color: #DDECEC;
-            font-weight: $base-font-weight;
         }
     }
-
-    /*
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: #002b36;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-        line-height: 1.5;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: #DDECEC;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-
-            &:hover:before {
-                content: unset;
-            }
-
-            margin-left: 20px;
-        }
-    }
-    */
 }
-
-
 
 /**
  * Site footer
