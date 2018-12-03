@@ -24,13 +24,18 @@
     float: left;
     color: #DDECEC !important;
 	position: relative;
-    &:hover:after, &:focus:after {
+    &:after {
+        color: #002b36;
         position: absolute;
         content: "\002a";
         left: 102%;
         top: 0%;
         font-weight: 500;
         font-size: 22px;
+    }
+
+    &:hover:after, &:focus:after {
+        color: #DDECEC;
     }
 }
 
@@ -55,12 +60,16 @@
             margin-left: 10px;
         }
 
-        &:hover:before, &:active:before {
+        &:before {
             position: absolute;
             content: "\002a";
             right: 105%;
             font-weight: $base-font-weight;
             font-size: 17px;
+            color: #002b36;
+        }
+
+        &:hover:before, &:active:before {
             color: #DDECEC;
         }
     }
