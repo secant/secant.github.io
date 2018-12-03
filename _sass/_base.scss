@@ -25,7 +25,10 @@ body {
     font-size: $base-font-size;
     background-color: #002b36;
     color: #DDECEC;
-    padding: 10px 30px;
+    padding: 10px $spacing_unit;
+    @include media-query($on-laptop) {
+        padding: 10px $spacing_unit / 2;
+    }
 }
 
 .text-box h1 {

@@ -20,12 +20,20 @@ layout: default
     <hr><br>
     <div align="center">
       <!--
-      &#x25A0; <a class="trigger" click="papers" href="#">Papers</a>
+      &#x25A0; <a class="ext-link-trigger" click="papers" href="#">Papers</a>
       -->
-      [ <a class="trigger" click="resume" href="#">Resume</a> ]
-      [ <a class="trigger" click="advice" href="#">Advice</a> ]
-      [ <a href="http://github.com/vivi">Github</a> ]
-      [ <a href="http://twitter.com/vivianfxng">Twitter</a> ]
+      <span class="ext-link">
+        <a class="ext-link-trigger" click="resume" href="#">Resume</a>
+      </span>
+      <span class="ext-link">
+        <a class="ext-link-trigger" click="advice" href="#">Advice</a>
+      </span>
+      <span class="ext-link">
+        <a href="http://github.com/vivi">Github</a>
+      </span>
+      <span class="ext-link">
+        <a href="http://twitter.com/vivianfxng">Twitter</a>
+      </span>
     </div>
     <br><hr>
     <br>
@@ -65,7 +73,7 @@ layout: default
   var linktext = username + "@" + hostname;
   document.getElementById('resume_email').innerHTML = '<a href="mailto:' + linktext + '">' + linktext + '</a>';
 
-  $('.trigger').click(function() {
+  $('.ext-link-trigger').click(function(e) {
     var target = $("#" + $(this).attr("click"));
     console.log($(this).attr("click"));
     console.log(target.hasClass("fadeout"));
@@ -75,6 +83,6 @@ layout: default
       $(".toggle").hide();
       target.show();
     }
-    console.log("click");
+    e.preventDefault();
   });
 </script>

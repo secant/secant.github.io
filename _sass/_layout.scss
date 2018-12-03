@@ -35,6 +35,7 @@
     &:hover {
         color: #DDECEC;
     }
+    /*
     @include media-query($on-palm) {
         &:hover:after {
             content: unset;
@@ -42,6 +43,7 @@
         line-height: 1.5;
         padding: 0 10px;
     }
+    */
 }
 
 .site-nav {
@@ -77,6 +79,7 @@
         }
     }
 
+    /*
     @include media-query($on-palm) {
         position: absolute;
         top: 9px;
@@ -131,6 +134,7 @@
             margin-left: 20px;
         }
     }
+    */
 }
 
 
@@ -286,4 +290,17 @@
     background: rgba(0, 0, 0, 0.3);
     border-bottom: 2px solid !important;
     color: #FFF !important;
+}
+
+#email, .ext-link {
+    white-space: nowrap;
+}
+
+.ext-link {
+    &:before {
+        content: "[ ";
+    }
+    &:after {
+        content: " ]"
+    }
 }
