@@ -21,7 +21,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-  {%- if page.fancybox -%}
+  {%- if layout.fancybox or page.fancybox -%}
   <link rel="stylesheet" href="/assets/fancybox/jquery.fancybox.css" />
   <script src="/assets/fancybox/jquery.fancybox.js"></script>
   {%- endif -%}
