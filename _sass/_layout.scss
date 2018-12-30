@@ -61,9 +61,9 @@
         }
 
         &:before {
-            position: absolute;
+            display: inline-block;
             content: "\002a";
-            right: 105%;
+            padding-right: 2px;
             font-weight: $base-font-weight;
             font-size: 17px;
             color: #002b36;
