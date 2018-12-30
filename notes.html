@@ -45,7 +45,14 @@ Build the array of classes.
         {% assign link = file.path | remove: "_" | prepend: "/content/" %}
         <span style="white-space: nowrap;">
           <a class="fancybox" data-fancybox-group="{{ clean_name }}" href="{{ link }}">{{ file.path | remove: "_notes/" | split: "/" | last | remove: ".pdf" }}</a> &#x25A0;</span>{% endif %}{% endfor %}
-        <br><br><hr><br>
+        <br><br>
+        {%- if clean_name == 'math 54' -%}
+        Some notes (ones that fall on a Tuesday or Thursday) are from discussion sections.
+        <br>
+        Jonathan Gleason, the GSI that led these sections, passed away in 2018. I credit him and his discussions for giving me a deeper understanding of linear algebra. He cared a great deal for his students, had a knack for breaking down concepts, and devoted countless hours towards being available for extra help. You could <i>feel</i> his dedication and love for teaching. He wrote some <a href="https://github.com/GleasSpty">badass textbooks</a> on linalg and real analysis <i>just to prepare for teaching</i>. I'll never forget his favorite vector space: C^∞(R). Rest in peace, Jonny.
+        {%- endif -%}
+        <hr>
+        <br>
       </div>
     {% endunless %}
   {% endfor %}
