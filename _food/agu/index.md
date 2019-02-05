@@ -1,14 +1,12 @@
 ---
 layout: post
 title:  "AGU Ramen - Agu's Savory Parmesan"
-date:   2016-12-24 22:25:18 -0700
-category: food
-comments: true
+date:   2016-12-24
 ---
 The star of this ramen is the savory broth! (not the parmesan - but that was
 also very good)
 
-![](/assets/blog/2016-12-24/ramen.jpg)
+![](ramen.jpg)
 
 *AGU Ramen, $16.00*
 

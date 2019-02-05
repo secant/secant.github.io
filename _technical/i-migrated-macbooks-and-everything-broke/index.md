@@ -1,8 +1,7 @@
 ---
 layout: post
 title: I migrated laptops and everything broke.
-date: 2018-11-21 18:44 -0800
-category: tech
+date: 2018-11-21
 ---
 A few weeks ago, my laptop's screen gave out. I switched to a new laptop, and
 used Apple's handy-dandy [migration

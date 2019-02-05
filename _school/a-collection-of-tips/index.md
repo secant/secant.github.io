@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "A collection of tips"
-date:   2016-12-26 22:25:18 -0700
-category: school
+date:   2016-12-26
 comments: true
 ---
 > I graduated! I decided to leave some updates/comments in text like this.
@@ -62,7 +61,6 @@ studying. Here's a few suggestions:
 * Eating poutine after finals lol
 
 > Let me add some more:
-
 * Explore beyond the bubble that is UC Berkeley's campus (and anything within a
     0.5mi radius...).
     * San Pablo Ave is filled with great food: Middle Eastern Market has the best kebabs, ever. Baklava too. Super Super Restaurant has excellent pho.
@@ -89,12 +87,19 @@ Hear me out here - *especially* if you're a freshman. I find that people come in
 rushing to find an internship, before even checking out other things you can do
 over the summer - research, teach, take classes, **chill**, etc.
 
-> I still agree with this.
+> I still agree with this. Chilling is important.
 
 **Classes I like:**
-(will be routinely updated)
 
 * CS 168 - If you have the opportunity to take this (it's usually offered in the
     Fall), I highly urge you to do so! Scott Shenker is one of the most caring
     and inspiring professors I've met. Also, don't you want to learn more about
     one of the biggest CS innovations (the Internet)?
+
+> More classes!
+* CS 162 - How do operating systems work? How does it all add up? Really makes
+    what you learn in 61C make sense. Also, learn how to write lots of C.
+* CS 262a - Take this if you like 162. The class is structured differently --
+    you're reading a bunch of papers every week instead of completing
+    programming homeworks/projects. But, wow, these papers are really valuable.
+    Your term project is usually a research project related to OS/Systems.

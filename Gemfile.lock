@@ -59,7 +59,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (> 3.5)
+  jekyll (> 3.7)
   jekyll-compose
   rouge (> 3.2)
 

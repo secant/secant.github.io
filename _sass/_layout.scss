@@ -148,6 +148,23 @@
 /**
  * Page content
  */
+
+div.table {
+    display: table;
+}
+
+div.tbody {
+    display: table-row-group;
+}
+
+div.tr {
+    display: table-row;
+}
+
+div.td {
+    display: table-cell;
+}
+
 .page-content {
     padding: $spacing-unit 0;
 }
@@ -195,8 +212,6 @@
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
-
     h2 {
         font-size: 32px;
 
@@ -222,10 +237,89 @@
     }
 }
 
-.MathJax_CHTML {
-    background: rgba(0, 0, 0, 0.3);
-    border-bottom: 2px solid !important;
-    color: #FFF !important;
+.post {
+    padding: 5px;
+    min-height: 80vh;
+}
+
+.post h3 {
+    margin-bottom: 4px;
+}
+
+.post h3.padded {
+    padding-top: 15px;
+}
+
+span.tag {
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 7px;
+    font-size: 12px;
+    color: $grey-color-light;
+}
+
+span.tag.default {
+    color: $grey-color-dark;
+    background-color: $grey-color-light;
+}
+
+span.tag.technical {
+    &:after {
+        content: "technical";
+    }
+    background-color: $blue-color;
+}
+
+span.tag.food {
+    &:after {
+        content: "food";
+    }
+    background-color: $purple-color;
+}
+
+span.tag.school {
+    &:after {
+        content: "school";
+    }
+    background-color: $green-color;
+}
+
+span.misc {
+    &:after {
+        content: "misc";
+    }
+    background-color: $grey-color-dark;
+}
+
+
+#index div.table {
+    margin-bottom: 10px;
+}
+
+#index div.td {
+    padding: 2px 4px;
+}
+
+#index div.td.category {
+    padding-left: 0px;
+    padding-right: 8px;
+    width: 65px;
+    text-align: right;
+}
+
+#index div.td.date {
+    color: $grey-color-dark;
+}
+
+#index div.td.year {
+    padding-left: 0px;
+    color: $grey-color;
+}
+
+#comments {
+    font-size: $small-font-size;
+    color: $grey-color;
+    text-align: right;
 }
 
 #email, .ext-link {

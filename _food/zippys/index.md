@@ -1,14 +1,12 @@
 ---
 layout: post
 title:  "Zippy's - Korean Fried Chicken"
-date:   2016-12-26 22:25:18 -0700
-category: food
-comments: true
+date:   2016-12-26
 ---
 
 I missed Zippy's so much....
 
-![korean fried chicken](/assets/blog/2016-12-26/zippys.jpg)
+![korean fried chicken](zippys.jpg)
 *Zippy's, $7.35 (mini)*
 
 Korean fried chicken is fried chicken with this sweet-spicy sauce. Essentially

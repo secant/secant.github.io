@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Live word count in vim airline"
-category: tech
-comments: true
+date: 2018-10-15
 ---
 
 This was a result of using vim to write my essays. I started writing them in
@@ -34,8 +33,8 @@ way after I finished documenting the complicated way. Go Vivian._
 
 <div align="center" markdown="1">
 ![normal mode word
-count](/assets/blog/2018-10-15/normal-mode.png){:width="300px"}
-![visual mode word count](/assets/blog/2018-10-15/visual-mode.png){:width="300px"}
+count](normal-mode.png){:width="300px"}
+![visual mode word count](visual-mode.png){:width="300px"}
 </div>
 
 You can get word count by typing <kbd>g</kbd> <kbd>Ctrl</kbd>+<kbd>g</kbd> in

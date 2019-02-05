@@ -1,0 +1,44 @@
+---
+layout: post
+title: Index
+---
+<p>
+Welcome to my blog! Here, you'll find me rambling about anything interesting I encounter.
+</p>
+
+{%- assign names = "Technical,School,Food,Misc" | split: "," -%}
+{%- assign cats = "" | split: "," -%}
+{%- assign cats = cats | push: site.technical | push: site.school | push: site.food | push: site.misc -%}
+
+<div id="index">
+<a href="/blog">
+  <span class="tag default">display by date</span>
+</a>
+{%- for c in cats -%}
+  {%- assign name = names | first -%}
+  {%- assign names = names | shift -%}
+  <div class="table">
+    <div class="tbody">
+      {%- assign posts = c | where_exp: "post","post.ignore != true" | sort: 'date' | reverse -%}
+      {%- for post in posts -%}
+      <div class="tr">
+        <div class="td category">
+          {%- if forloop.index == 1 -%}
+          <a href="{{ name }}">
+            <span class="tag {{ name }}"></span>
+          </a>
+          {%- endif -%}
+        </div>
+        {%- assign url = post.url | split: "/" | pop | join: "/" -%}
+        <div class="td year">
+          ({{ post.date | date: "%b. %d, %Y" }})
+        </div>
+        <div class="td">
+          <a href="{{ url }}">{{ post.title }}</a>
+        </div>
+      </div>
+      {%- endfor -%} <!-- for post in posts -->
+    </div>
+  </div>
+  {%- endfor -%} <!-- for c in cats -->
+</div>

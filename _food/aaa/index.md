@@ -1,16 +1,14 @@
 ---
 layout: post
 title:  "AAA Local BBQ - Mochiko Chicken and Chicken Katsu"
-date:   2016-12-31 22:25:18 -0700
-category: food
-comments: true
+date:   2016-12-31
 ---
 These portions are huge!
 
-![](/assets/blog/2016-12-31/mochiko.jpg)
+![](mochiko.jpg)
 *AAA Local BBQ, $6.95 (Mini)*
 
-![](/assets/blog/2016-12-31/katsu.jpg)
+![](katsu.jpg)
 *AAA Local BBQ, $6.95 (Mini)*
 
 I went here with my little brother (he got the katsu). This was *huge* for a

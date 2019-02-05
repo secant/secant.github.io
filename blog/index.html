@@ -1,0 +1,45 @@
+---
+layout: post
+title: Index
+---
+<p>
+Welcome to my blog! Here, you'll find me rambling about anything interesting I encounter.
+</p>
+
+{%- assign posts = "" | split: "," -%}
+{%- assign posts = posts | concat: site.technical | concat: site.school | concat: site.food | concat: site.misc -%}
+{%- assign posts = posts | where_exp: "post","post.ignore != true" | sort: 'date' | reverse -%}
+
+<div id="index">
+<div>
+  <a href="categories">
+    <span class="tag default">display by categories</span>
+  </a>
+</div>
+<div class="table" id="chrono">
+  <div class="tbody">
+{%- assign year = 0 -%}
+{%- for post in posts -%}
+    <div class="tr">
+      {%- assign pyear =  post.date | date: "%Y" -%}
+      <div class="td year">
+        {%- if year != pyear -%}
+        {%- assign year = pyear -%}
+        ({{ year }})
+        {%- endif -%}
+      </div>
+      {%- assign url = post.url | split: "/" | pop | join: "/" -%}
+      <div class="td date">
+        {{ post.date | date: "%b. %d" }}
+      </div>
+      <div class="td">
+        <a href="{{ url }}">{{ post.title }}</a>
+        <a href="{{ post.collection }}">
+          <span class="tag {{ post.collection }}"></span>
+        </a>
+      </div>
+    </div>
+{%- endfor -%} <!-- for post in posts -->
+  </div>
+</div>
+</div>

@@ -1,12 +1,10 @@
 ---
 layout: post
 title:  "Paliuli - Fried Rice Omelette"
-date:   2016-12-28 22:25:18 -0700
-category: food
-comments: true
+date:   2016-12-28
 ---
 Fried rice + omelette = a match made in heaven.
-![](/assets/blog/2016-12-28/friedriceomelette.jpg)
+![](friedriceomelette.jpg)
 *Paliuli, $6.95*
 
 I really liked the fried rice! There were bits of bacon and sausage; it was so

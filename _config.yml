@@ -22,7 +22,45 @@ kramdown:
 highlighter: rouge
 
 collections:
+  technical:
+    output: true
+    permalink: /blog/technical/:path
+  school:
+    output: true
+    permalink: /blog/school/:path
+  food:
+    output: true
+    permalink: /blog/food/:path
+  misc:
+    output: true
+    permalink: /blog/misc/:path
   notes:
     output: true
     path: ""
     permalink: "content/notes/:path"
+
+defaults:
+  -
+    scope:
+      type: technical
+      path: ""
+    values:
+      layout: "post"
+  -
+    scope:
+      type: school
+      path: ""
+    values:
+      layout: "post"
+  -
+    scope:
+      type: food
+      path: ""
+    values:
+      layout: "post"
+  -
+    scope:
+      type: misc
+      path: ""
+    values:
+      layout: "post"

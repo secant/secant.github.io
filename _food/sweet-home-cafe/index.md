@@ -1,22 +1,20 @@
 ---
 layout: post
 title:  "Sweet Home Cafe - Hot Pot!"
-date:   2017-01-08 22:25:18 -0700
-category: food
-comments: true
+date:   2017-01-08
 ---
 The more the merrier! Hot pot is such an intimate way of eating food with your
 friends/loved ones :)
 
-![](/assets/blog/2017-01-08/hotpot.jpg)
+![](hotpot.jpg)
 *Sweet Home Cafe, $8.95 (for the Summer Garlic broth)*
 
-![](/assets/blog/2017-01-08/hotpot2.jpg)
+![](hotpot2.jpg)
 *Sweet Home Cafe, dishes are $3-5*
 
-![](/assets/blog/2017-01-08/bowl.jpg)
+![](bowl.jpg)
 
-![](/assets/blog/2017-01-08/dessert.jpg)
+![](dessert.jpg)
 *Sweet Home Cafe, FREE!*
 
 For those not familiar with hot pot, you boil the broth in front of you, and
