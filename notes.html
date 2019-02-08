@@ -2,61 +2,42 @@
 layout: default
 fancybox: true
 ---
-{% for note in site.collections %}
-  {% if note.label == "notes" %}
-    {% assign notes = note %}
-  {% endif %}
+{%- assign berkeley = "" | split: "" -%}
+{% for c in site.data.notes.berkeley %}
+  {%- assign berkeley = berkeley | push: c[0] -%}
 {% endfor %}
-
-{% comment %}
-Build the array of classes.
-{% endcomment %}
-{% assign delimiter = "," %}
-{% assign names_str = "" %}
-{% for file in notes.files %}
-  {% assign names_arr = names_str | split: delimiter %}
-  {% assign name = file.path | remove: "_notes/" | split: "/" | first %}
-  {% unless names_arr contains name %}
-      {% assign names_str = names_str | append: delimiter | append: name %}
-  {% endunless %}
-{% endfor %}
+{%- assign berkeley = berkeley | sort -%}
 
 <div class="text-box">
   Notes find their way here!
   <br>
   <ul>
     <h3 style="margin-bottom: 0px">
-      <li><a href="#" click="ee16a" class="click">EE 16A (SP 16 | AYAZIFAR & ALON)</a></li>
-      <li><a href="#" click="math54" class="click">MATH 54 (SP 16 | YUAN)</a></li>
-      <li><a href="#" click="gws100ac" class="click">GWS 100AC (SP 16 | BARNES)</a></li>
-      <li><a href="#" click="math53" class="click">MATH 53 (FA 15 | GOMEZ)</a></li>
-      <li><a href="#" click="physics7b" class="click">PHYSICS 7B (FA 15 | LANZARA)</a></li>
+      {% for c in berkeley %}
+      {%- assign class = site.data.notes.berkeley[c] -%}
+      <li><a href="#" click="{{ class.abbrev }}" class="click">{{ class.name }}</a></li>
+      {% endfor %}
     </h3>
   </ul>
   <hr><br>
-  {% for name in names_arr %}
-    {% unless name == "" %}
-      {% assign clean_name = name | replace: "-", " " %}
-      {% assign clean_name_no_space = name | replace: "-", "" %}
-      <div class="note" id="{{ clean_name_no_space }}" style="display: none;">
-        <h2 style="margin-bottom: 0px">{{ clean_name | upcase }}</h2>
-        {% assign files = notes.files | sort: "path" %}
-        {% for file in files %}{% if file.path contains name %}
-        {% assign link = file.path | remove: "_" | prepend: "/content/" %}
-        <span style="white-space: nowrap;">
-          <a class="fancybox" data-fancybox-group="{{ clean_name }}" href="{{ link }}">{{ file.path | remove: "_notes/" | split: "/" | last | remove: ".pdf" }}</a> &#x25A0;</span>{% endif %}{% endfor %}
-        <br><br>
-        {%- if clean_name == 'math 54' -%}
-        Some notes (ones that fall on a Tuesday or Thursday) are from discussion sections.
-        <br>
-        Jonathan Gleason, the GSI that led these sections, passed away in 2018. I credit him and his discussions for giving me a deeper understanding of linear algebra. He cared a great deal for his students, had a knack for breaking down concepts, and devoted countless hours towards being available for extra help. You could <i>feel</i> his dedication and love for teaching. He wrote some <a href="https://github.com/GleasSpty">badass textbooks</a> on linalg and real analysis <i>just to prepare for teaching</i>. I'll never forget his favorite vector space: C^∞(R). Rest in peace, Jonny.
-        {%- endif -%}
-        <hr>
-        <br>
-      </div>
-    {% endunless %}
+
+  {% for c in berkeley %}
+  {%- assign class = site.data.notes.berkeley[c] -%}
+  <div class="note" id="{{ class.abbrev }}" style="display: none;">
+    <h2 style="margin-bottom: 0px">{{ class.name }}</h2>
+    {% for note in class.notes %}
+    <span style="white-space: nowrap;">
+      <a class="fancybox" data-fancybox-group="{{ class.abbrev }}" href="{{ note.link | append: "/preview" }}">{{ note.name }}</a> &#x25A0;
+    </span>
+    {% endfor %}
+    <br><br>
+    {{ class.comment | markdownify }}
+    <hr>
+    <br>
+  </div>
   {% endfor %}
 </div>
+
 <script type="text/javascript">
   // Fancybox
   $(".fancybox").fancybox({
@@ -64,7 +45,8 @@ Build the array of classes.
     height: "110%",
     type:'iframe',
     afterLoad: function() {
-      this.title = '<div align="center"><a href="' + this.href + '" target="_blank"><button type="button" class="btn btn-primary btn-outline"><i class="fa fa-download"></i> Download</button></a></div>'
+      let link = this.href.replace("/preview", "/view");
+      this.title = '<div align="center"><a href="' + link + '" target="_blank">Download</a></div>'
     },
     helpers : {
         title: {
@@ -105,6 +87,8 @@ Build the array of classes.
       if (!$(className).is(":visible")) {
         closeAll();
         $(className).css("display", "block");
+      } else {
+        closeAll();
       }
     });
 </script>

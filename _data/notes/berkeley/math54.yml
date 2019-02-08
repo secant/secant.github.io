@@ -1,0 +1,108 @@
+name: MATH 54 (SP 16 | YUAN)
+abbrev: math54
+comment: |
+  Some notes (ones that fall on a Tuesday or Thursday) are from discussion sections.
+
+  Jonathan Gleason, the GSI that led these sections, passed away in 2018. I
+  credit him and his discussions for giving me a deeper understanding of
+  linear algebra. He cared a great deal for his students, had a knack for
+  breaking down concepts, and devoted countless hours towards being available
+  for extra help.  You could *feel* his dedication and love for teaching. He
+  wrote some [https://github.com/GleasSpty](badass textbooks) on linalg and real
+  analysis *just to prepare for teaching*. I'll never forget his favorite vector
+  space: C^∞(R). Rest in peace, Jonny.
+notes:
+  - name: 01-19-16
+    link: https://drive.google.com/file/d/1jMoE7OAKeY73UjqNgChWzDENNteTcQ6K
+  - name: 01-20-16
+    link: https://drive.google.com/file/d/1yIH1W0Enh47bNjiHGI_WcYv_nbP9NohE
+  - name: 01-21-16
+    link: https://drive.google.com/file/d/1ady6teMqFfcyW7o3MYfXW0IPf6hk0Ez1
+  - name: 01-22-16
+    link: https://drive.google.com/file/d/1LcpS-llorROZxsc----znspQ7Zdp_1ME
+  - name: 01-25-16
+    link: https://drive.google.com/file/d/1jF6JGdUeOyn0bkC55bd6T6_71-eudlUj
+  - name: 01-26-16
+    link: https://drive.google.com/file/d/1a2I8K1XGLYxa_uPDBnl4YJ53BdN2A-mF
+  - name: 01-27-16
+    link: https://drive.google.com/file/d/1LUl3Gq8i7Ri_OXRKugUV7pJnxEwD6MAH
+  - name: 01-28-16
+    link: https://drive.google.com/file/d/1e5NvrqUQng3YB1HYitYYcovoxH-Hhus0
+  - name: 01-29-16
+    link: https://drive.google.com/file/d/1pr4bsUohVc1iEWuTgFUfncUHEDaiJszK
+  - name: 02-01-16
+    link: https://drive.google.com/file/d/1FQ3RP0pnHsok0-ZK0NBBCG0-u8ot5-kz
+  - name: 02-02-16
+    link: https://drive.google.com/file/d/19nEOgjoGb6oOfsG-Qkseq0-DmQUhRquZ
+  - name: 02-03-16
+    link: https://drive.google.com/file/d/1P3booi7tiNDzN4-nwLU-Bw31u_q_HeMJ
+  - name: 02-04-16
+    link: https://drive.google.com/file/d/1ePMjYQ1bfmVC7mySuj_EIy7EsBznFxP2
+  - name: 02-05-16
+    link: https://drive.google.com/file/d/1-k0WXnHabYk5t8oqJbiFEjmFX0JTYAav
+  - name: 02-08-16
+    link: https://drive.google.com/file/d/1PVjFtiGKqUT6GzYCGCGV6qLmyIuWSJBh
+  - name: 02-09-16
+    link: https://drive.google.com/file/d/1EAhzf8lfyLmp3eksJ5J-hvAbVKkfbFLA
+  - name: 02-10-16
+    link: https://drive.google.com/file/d/1uSdxxQqVg7ZhN2lJQRBEJLUB5X6RD0NX
+  - name: 02-11-16
+    link: https://drive.google.com/file/d/12uHsyAnf5QzBwH_n_WZLRggsu221uMcQ
+  - name: 02-17-16
+    link: https://drive.google.com/file/d/1-ncJVVzoHDXEuS_vgl77ocHc5wEvtHqV
+  - name: 02-19-16
+    link: https://drive.google.com/file/d/1rIMlZoqjRq9kgF_3EGC3e9hfpzKjGO5K
+  - name: 02-22-16
+    link: https://drive.google.com/file/d/1cv70HoVh9mbNSQOWm1wO9YZJQgxUIEJl
+  - name: 02-24-16
+    link: https://drive.google.com/file/d/11gsZQWC5a6EUkO9eM283PBBOAuRmbKCy
+  - name: 02-26-16
+    link: https://drive.google.com/file/d/1nZcxnIq6-R_yKcTCIwHN5yrApvFttVB9
+  - name: 02-29-16
+    link: https://drive.google.com/file/d/1ncISo4PE5JUe0OR0nwcYdSE7wmgJygUY
+  - name: 03-02-16
+    link: https://drive.google.com/file/d/1OzhOH0FWvz-HQl8lN8GRGwJmVSN7p49o
+  - name: 03-03-16
+    link: https://drive.google.com/file/d/12JBHpVzuxrg5y-VO-aLb47czUviJA23i
+  - name: 03-04-16
+    link: https://drive.google.com/file/d/1sfNjlHnxpRO0dl22K9348njUcg1QGlj-
+  - name: 03-07-16
+    link: https://drive.google.com/file/d/1dt6js5YaaZP5RXYxs4OVnibu7tnnDK5i
+  - name: 03-09-16
+    link: https://drive.google.com/file/d/1VJLmuxX7sgpi7Omn-QPUkFYPw15MgwYP
+  - name: 03-11-16
+    link: https://drive.google.com/file/d/1p6mpgWd79wmKQFSW7iDqnyLbDF7eUKJd
+  - name: 03-16-16
+    link: https://drive.google.com/file/d/1VNSphxFj0DGiQqPgYiK0RTb2bQpznHPU
+  - name: 03-18-16
+    link: https://drive.google.com/file/d/1m2KHtnXTcDFVUZkGK6hXM0pzvzXgvkO2
+  - name: 03-28-16
+    link: https://drive.google.com/file/d/1Vb5QFKGddn-TNndCOLJWty_mVHsR5-WT
+  - name: 03-30-16
+    link: https://drive.google.com/file/d/1WTOSqkWHmbxSW-ZBTCihzFQpCrozk6DI
+  - name: 04-01-16
+    link: https://drive.google.com/file/d/1c41M4zxUhB4AqzPtbYzpblhJB-hLzgoI
+  - name: 04-04-16
+    link: https://drive.google.com/file/d/1k5adlEcspdfPhnyX68HS718xaYCOHa4K
+  - name: 04-06-16
+    link: https://drive.google.com/file/d/1jFXAWySWh-JwMDHGbvhqZewqIFLAkaw3
+  - name: 04-08-16
+    link: https://drive.google.com/file/d/1o9z60JQCXqMqfPLsuhCJwKf18UVCtVFw
+  - name: 04-11-16
+    link: https://drive.google.com/file/d/1JRNjNXZul-nW1zuVfQV9mYFzU5dgBmgr
+  - name: 04-13-16
+    link: https://drive.google.com/file/d/1Ien0Mb3f165UTjgwM-lNLHmjL1Jf2v0z
+  - name: 04-15-16
+    link: https://drive.google.com/file/d/1v4ol9lZB2eNlmg9SkY14dWYESGekjFRq
+  - name: 04-18-16
+    link: https://drive.google.com/file/d/1Glxp8e92JFqKXkp54DP8wVQiJ_HisKpF
+  - name: 04-20-16
+    link: https://drive.google.com/file/d/1AEfzYWN-qUFplaRoDX4t34-QvhnqBzg7
+  - name: 04-22-16
+    link: https://drive.google.com/file/d/1e7F_38D2kdWCqTsPETsR0ojzeYwip1pp
+  - name: 04-25-16
+    link: https://drive.google.com/file/d/1uQww_EtKga1CLsNNwJeCJiXiRIs-OAdq
+  - name: 04-27-16
+    link: https://drive.google.com/file/d/1XnyfGeZ3cigSk3wAT1RIC950sj9if3NV
+  - name: 04-29-16
+    link: https://drive.google.com/file/d/1MwGYFIbviA9N_wtnwwgDkgQeyKP81jQV
