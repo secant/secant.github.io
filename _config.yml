@@ -34,10 +34,6 @@ collections:
   misc:
     output: true
     permalink: /blog/misc/:path
-  notes:
-    output: true
-    path: ""
-    permalink: "content/notes/:path"
 
 defaults:
   -

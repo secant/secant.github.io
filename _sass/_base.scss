@@ -12,6 +12,10 @@ body {
     color: #6DC2FD;
 }
 
+#name {
+    font-size: 26px;
+}
+
 .text-box {
     font-family: $base-font-family, sans-serif;
     font-weight: $base-font-weight;
@@ -26,8 +30,7 @@ body {
 
 .text-box h1 {
     font-size: 2em;
-    font-weight: 700;
-    margin-bottom: 5px;
+    font-weight: 600;
 }
 
 .text-box .inside {
@@ -69,7 +72,7 @@ body {
     padding-bottom: 10px;
 }
 
-h2 #email {
+#name #email {
     font-size: 16px;
 }
 
@@ -105,11 +108,13 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1, h2, p, blockquote, pre, ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
+}
+
+h3, h4, h5, h6 {
+    margin-bottom: $spacing-unit / 4;
 }
 
 
@@ -150,17 +155,6 @@ li {
         margin-bottom: 0;
     }
 }
-
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
-}
-
-
 
 /**
  * Links
@@ -222,6 +216,10 @@ code, {
 
 code {
     padding: 1px 5px;
+}
+
+code.highlighter-rouge {
+    white-space: nowrap;
 }
 
 pre {
