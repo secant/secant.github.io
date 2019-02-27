@@ -8,5 +8,6 @@ layout: class
 {% include_relative resources.md %}
 
 ## Semester-Specific
+{% include_relative sp19.md %}
 {% include_relative sp17.md %}
 </div>
