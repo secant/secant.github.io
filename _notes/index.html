@@ -1,6 +1,7 @@
 ---
 layout: default
 fancybox: true
+ignore: true
 ---
 {%- assign berkeley = "" | split: "" -%}
 {% for c in site.data.notes.berkeley %}
@@ -17,6 +18,7 @@ fancybox: true
       {%- assign class = site.data.notes.berkeley[c] -%}
       <li><a href="#" click="{{ class.abbrev }}" class="click">{{ class.name }}</a></li>
       {% endfor %}
+      <li><a href="#" click="assorted" class="click">ASSORTED NOTES</a></li>
     </h3>
   </ul>
   <hr><br>
@@ -36,6 +38,17 @@ fancybox: true
     <br>
   </div>
   {% endfor %}
+{%- assign notes = site.notes | where_exp: "note","note.ignore != true" | sort: 'date' | reverse -%}
+  <div class="note" id="assorted" style="display: none;">
+    <h2 style="margin-bottom: 0px">ASSORTED NOTES</h2>
+    <ul>
+    {% for note in notes %}
+      <li><a href="{{ note.url }}">
+          {{ note.date | date: "(%Y) %b. %d" }}: {{ note.title }}
+      </a></li>
+    {% endfor %}
+    </ul>
+  </div>
 </div>
 
 <script type="text/javascript">
