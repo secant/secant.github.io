@@ -25,7 +25,12 @@
   <link rel="stylesheet" href="/assets/fancybox/jquery.fancybox.css" />
   <script src="/assets/fancybox/jquery.fancybox.js"></script>
   {%- endif -%}
+
   {%- for js_name in layout.extra_js -%}
-  <script type="text/javascript" async src="{{ js_name }}"></script>
+  <script type="text/javascript" src="{{ js_name }}"></script>
+  {%- endfor -%}
+
+  {%- for js_name in page.extra_js -%}
+  <script type="text/javascript" src="{{ js_name }}"></script>
   {%- endfor -%}
 </head>
