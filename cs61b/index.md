@@ -1,5 +1,6 @@
 ---
 layout: class
+meta: "UC Berkeley CS 61B Resources"
 ---
 <div class="text-box" markdown="1">
 # [CS 61B](https://datastructur.es){:target="_blank"}

@@ -8,7 +8,7 @@
 # Site settings
 title: vivian fang
 email: vivian@eecs.berkeley.edu
-description: EECS student @ UC Berkeley.
+description: EECS student @ UC Berkeley
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://vivi.sh" # the base hostname & protocol for your site
 github_username:  vivi

@@ -1,5 +1,6 @@
 ---
 layout: class
+meta: "UC Berkeley CS 61A Resources"
 ---
 <div class="text-box" markdown="1">
 # [CS 61A](https://cs61a.org){:target="_blank"}
