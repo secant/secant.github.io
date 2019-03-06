@@ -6,9 +6,6 @@ title: Index
 Welcome to my blog! Here, you'll find me rambling about anything interesting I encounter.
 </p>
 
-{%- assign posts = "" | split: "," -%}
-{%- assign posts = posts | concat: site.technical | concat: site.school | concat: site.food | concat: site.misc -%}
-{%- assign posts = posts | where_exp: "post","post.ignore != true" | sort: 'date' | reverse -%}
 
 <div id="index">
 <div>
@@ -18,6 +15,7 @@ Welcome to my blog! Here, you'll find me rambling about anything interesting I e
 </div>
 <div class="table" id="chrono">
   <div class="tbody">
+{% include all_posts %}
 {%- assign year = 0 -%}
 {%- for post in posts -%}
     <div class="tr">

@@ -1,0 +1,6 @@
+{%- assign names = "" | split: "," -%}
+{%- assign cats = "" | split: "," -%}
+{%- for c in site.data.categories -%}
+  {%- assign cats = cats | push: site[c.category] -%}
+  {%- assign names = names | push: c.name -%}
+{%- endfor -%}

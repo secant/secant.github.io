@@ -61,3 +61,12 @@ $on-laptop:        800px;
         "base",
         "layout"
 ;
+
+{% for c in site.data.categories %}
+span.tag.{{ c.category }} {
+    &:after {
+        content: "{{ c.category }}";
+    }
+    background-color: #{{ c.color }};
+}
+{% endfor %}

@@ -1,0 +1,12 @@
+- category: technical
+  name: Technical
+  color: 486ca5
+- category: school
+  name: School
+  color: 579b61
+- category: food
+  name: Food
+  color: 6d48a5
+- category: misc
+  name: Misc
+  color: a54848

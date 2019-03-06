@@ -1,0 +1,3 @@
+{%- assign posts = "" | split: "," -%}
+{%- assign posts = posts | concat: site.technical | concat: site.school | concat: site.food | concat: site.misc -%}
+{%- assign posts = posts | where_exp: "post","post.ignore != true" | sort: 'date' | reverse -%}
