@@ -1,16 +1,14 @@
 ---
 layout: post
-title:  "Food"
 ignore: true
+title_prefix: "Category: "
 ---
-<p>
-There was a point in my life where I liked to write about food.
-</p>
+{{ content }}
 <a href="/blog">
   <span class="tag default">back to index</span>
 </a>
 <div id="index">
-{%- assign posts = site.food | where_exp: "post","post.ignore != true" | sort: 'date' | reverse -%}
+{%- assign posts = site[page.title] | where_exp: "post","post.ignore != true" | sort: 'date' | reverse -%}
 <div class="table">
   <div class="tbody">
 {% assign year = 0 %}

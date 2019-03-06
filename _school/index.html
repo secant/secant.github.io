@@ -1,37 +1,8 @@
 ---
-layout: post
-title:  "School"
+layout: category
+title: school
 ignore: true
 ---
 <p>
 Anything related to school (undergraduate / graduate).
 </p>
-<a href="/blog">
-  <span class="tag default">back to index</span>
-</a>
-<div id="index">
-{%- assign posts = site.school | where_exp: "post","post.ignore != true" | sort: 'date' | reverse -%}
-<div class="table">
-  <div class="tbody">
-{% assign year = 0 %}
-{% for post in posts %}
-    <div class="tr">
-      {% assign pyear =  post.date | date: "%Y" %}
-      <div class="td year">
-        {% if year != pyear %}
-        {% assign year = pyear %}
-        ({{ year }})
-        {% endif %}
-      </div>
-      {% assign url = post.url | split: "/" | pop | join: "/" %}
-      <div class="td date">
-        {{ post.date | date: "%b. %d" }}
-      </div>
-      <div class="td">
-        <a href="{{ url }}">{{ post.title }}</a>
-      </div>
-    </div>
-{% endfor %} <!-- for post in posts -->
-  </div>
-</div>
-</div>
