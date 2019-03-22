@@ -1,20 +1,32 @@
 ---
 layout: default
-extra_js:
-  - //cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.4/jstz.min.js
+title: Vivian's Calendar
 ---
 <div class="text-box">
-<div style="width:100%; max-width:800px; margin-left:auto; margin-right:auto;">
-  Note: Depending on the time of year, my current timezone is PST/PDT (UTC
-  -8/UTC -7) , but the calendar below is displayed in your local timezone.
-  <hr>
+<span style="width:100%; max-width:800px; margin-left:auto; margin-right:auto;">
+  Below is my schedule, which I (usually) keep updated.
+  <div id="timezone">
+  </div>
   <div id="calendar">
     <iframe src="https://calendar.google.com/calendar/b/2/embed?title=Vivian&#39;s%20Schedule&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=hi%40vivi.sh&amp;color=%231B887A&amp;src=v.fang%40berkeley.edu&amp;color=%231B887A&amp;src=vivian98.fang%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
   </div>
 </div>
 </div>
 <script type="text/javascript">
-  var timezone = jstz.determine();
-  var curr = document.getElementById("calendar").innerHTML;
-  document.getElementById("calendar").innerHTML = curr.replace(/ctz=.+" style/, 'ctz=' + timezone.name() + '" style');
+  let my_tz = "America/Los_Angeles";
+  let tz_text = document.getElementById("timezone");
+  let my_offset = new Date(new Date().toLocaleString("en-US", {
+    timeZone: my_tz,
+  })).getTimezoneOffset() / -60;
+  let browser_tz = new Intl.DateTimeFormat().resolvedOptions().timeZone;
+  if (browser_tz == undefined) {
+    tz_text.innerHTML = `<b>Note:</b> The calendar below is displayed in the timezone America/Los_Angeles (UTC${my_offset}).`;
+  } else if (browser_tz != my_tz) {
+    tz_text.innerHTML = `<b>Note:</b> My current timezone is ${my_tz} (UTC${my_offset}).<br>`;
+    let offset = new Date().getTimezoneOffset() / -60;
+    tz_text.innerHTML = tz_text.innerHTML + `The calendar below is displayed in your local timezone: ${browser_tz} (UTC${offset > 0 ? "+" : ""}${offset}).`;
+  }
+
+  let cal = document.getElementById("calendar");
+  cal.innerHTML = cal.innerHTML.replace(/ctz=.+" style/, 'ctz=' + browser_tz + '" style');
 </script>
