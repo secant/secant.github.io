@@ -3,9 +3,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | prepend: layout.title_prefix }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.meta %}{{ page.meta }}{% elsif
-  layout.meta_excerpt %}{{ content | strip_html | split: "." | first | truncatewords: 25 | strip_newlines }}{% else %}{{ site.description }}{% endif %}">
+  <title>{% if page.title %}{{ page.title | prepend: layout.title_prefix | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% if page.meta %}
+  <meta name="description" content="{{ page.meta }}">
+  {% elsif layout.meta_excerpt %}
+  <meta name="description" content="{{ content | strip_html | split: "." | first | truncatewords: 25 | strip_newlines }}">
+  {% endif %}
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">

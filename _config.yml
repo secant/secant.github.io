@@ -6,11 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: vivian fang
+title: vivi.sh
 email: vivian@eecs.berkeley.edu
-description: EECS student @ UC Berkeley
+description: Vivian's website
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://vivi.sh" # the base hostname & protocol for your site
+url: "https://vivi.sh" # the base hostname & protocol for your site
 github_username:  vivi
 
 # Build settings
