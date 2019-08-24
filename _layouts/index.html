@@ -37,7 +37,7 @@ layout: default
     </div>
     -->
     <div class="text-box code toggle" id="resume" class="text-box" style="display: none; text-align: center; margin-bottom: 10px;">
-      <i class="fa fa-envelope-o"></i> <div id="resume_email"></div>
+      <img class="email" src="/assets/email_resume.svg" alt="resume at vivi dot sh"></img>
     </div>
     <div class="toggle" id="advice" style="display: none;">
     {% highlight python %}
@@ -54,3 +54,15 @@ layout: default
   </div>
   <br>
 </div>
+<script>
+  $('.ext-link-trigger').click(function(e) {
+    var target = $("#" + $(this).attr("click"));
+    if (target.is(":visible")) {
+      target.hide();
+    } else {
+      $(".toggle").hide();
+      target.show();
+    }
+    e.preventDefault();
+  });
+</script>
