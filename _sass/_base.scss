@@ -8,6 +8,16 @@ body {
 /**
  * Some custom text-boxes
  */
+
+span.email-wrapper {
+    font-size: $base-font-size;
+}
+
+img.email {
+    display: inline;
+    height: 1.2em;
+}
+
 .important {
     color: #6DC2FD;
 }
@@ -33,8 +43,13 @@ body {
     font-weight: 600;
 }
 
-.text-box .inside {
-    padding-left: 20px;
+.indent {
+    padding-left: 10px;
+}
+
+.indent strong {
+    font-weight: 500;
+    color: #6DC2FD;
 }
 
 .text-box a {

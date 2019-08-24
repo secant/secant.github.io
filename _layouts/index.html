@@ -1,26 +1,14 @@
 ---
 layout: default
-title: Vivian Fang
-meta: EECS student @ UC Berkeley
 ---
 <div class="home">
-  <div id="intro-box" class="text-box">
+  <div class="text-box">
     <div id="name">
-      Vivian Fang <span id="email"></span>
+      Vivian Fang <span class="email-wrapper">[ <img class="email" src="/assets/email.svg" alt="vivian at eecs dot berkeley dot edu"></img> ]</span>
     </div>
-    <ul>
-      <li>
-        Research assistant in the <a href="https://netsys.cs.berkeley.edu">NetSys Lab</a> working with Scott Shenker and Aurojit Panda on <span class="important">serverless</span> and <span class="important">edge computing</span>. Broadly interested in <span class="important">systems</span> and <span class="important">networking</span>.
-      </li>
-      <li>
-        Graduated from <span class="important">UC Berkeley</span> in 2018.
-        <br>
-        During undergrad, I TA-ed various CS courses (<a href="cs168">CS 168</a>, <a href="cs61b">CS 61B</a>, and <a href="cs61a">CS 61A</a>). You can find my teaching materials for each class by clicking the respective link.
-      </li>
-      <li>
-        I like origami, cats, and <a href="https://bicycal.berkeley.edu">bikes</a>!
-      </li>
-    </ul>
+    <div class="indent">
+      {{ content }}
+    </div>
     <hr><br>
     <div align="center">
       <!--
@@ -66,27 +54,3 @@ meta: EECS student @ UC Berkeley
   </div>
   <br>
 </div>
-<script>
-  // Email (Spam Prevention)
-  var username = "vivian";
-  var hostname = "eecs.berkeley.edu";
-  var linktext = username + "@" + hostname;
-  document.getElementById('email').innerHTML = '[ <a href="mailto:' + linktext + '">' + linktext + '</a> ]';
-  var username = "resume";
-  var hostname = "vivi.sh";
-  var linktext = username + "@" + hostname;
-  document.getElementById('resume_email').innerHTML = '<a href="mailto:' + linktext + '">' + linktext + '</a>';
-
-  $('.ext-link-trigger').click(function(e) {
-    var target = $("#" + $(this).attr("click"));
-    console.log($(this).attr("click"));
-    console.log(target.hasClass("fadeout"));
-    if (target.is(":visible")) {
-      target.hide();
-    } else {
-      $(".toggle").hide();
-      target.show();
-    }
-    e.preventDefault();
-  });
-</script>
