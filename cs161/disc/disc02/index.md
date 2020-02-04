@@ -6,6 +6,11 @@ title: Discussion 02 Guide
 ### Short Answer!
 3. Assume ASLR is enabled. What vulnerability would arise if the instruction
    `jmp *esp` exists in memory?
+   ASLR means we have to guess the stack address if we want to execute injected
+   code. However, if there is a `jump *esp` instruction in a piece of memory
+   that is *not* ASLR'd (e.g., text in most ASLR implementations), we can use
+   this to find our way into the stack.
+
    The attacker could first do the following:
    1. Find the address `X` to the `jump *esp` instruction.
    2. Overwrite the return address to be `X`.
