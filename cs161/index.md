@@ -11,4 +11,5 @@ Email: <img class="email" src="/assets/email.svg" alt="vivian at eecs dot berkel
 ## Resources
 ### Discussion Guides
 * [Discussion 02](disc/disc02)
+* [Discussion 03](disc/disc03)
 </div>
